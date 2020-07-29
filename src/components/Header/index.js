@@ -27,7 +27,7 @@ const Header = (props) => {
                             >
                                 <nav id="navbar">
                                     <a href="/" id="homeLink">
-                                        <img id="logo" src={require("../../assets/images/logo.jpg")} alt="logo" />
+                                        <img id="logo" src={require("../../assets/images/logo.png")} alt="logo" />
                                     </a>
                                     <div id="menu">
                                         <NavLink to="/o-mnie">O MNIE</NavLink>
