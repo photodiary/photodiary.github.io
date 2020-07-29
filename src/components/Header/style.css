@@ -1,0 +1,123 @@
+#logo {
+    width: 250px;
+    opacity: 100%;
+}
+
+#navbar {
+    padding: 4vh 10vw;
+}
+
+#homeLink {
+    float: left;
+}
+
+#menu {
+    float: right;
+    margin-top: 40px;
+}
+
+@media only screen and (max-width: 600px){
+    #homeLink, #menu {
+        float: none
+    }
+    #menu {
+        display: none;
+    }
+}
+
+.arrow {
+    position: absolute;
+    color: white;
+    font-size: 2rem;
+    opacity: 35%;
+    cursor: pointer;
+}
+.arrow-left {
+    top: 50%;
+    left: 10px;
+}
+.arrow-right {
+    top: 50%;
+    right: 10px;
+}
+
+.bg1 {
+    background: linear-gradient(rgba(0, 0, 0, .15), rgba(0, 0, 0, .15)), url("../../assets/images/bg1.png");
+    background-position: center 60%;
+}
+.bg2 {
+    background: linear-gradient(rgba(0, 0, 0, .15), rgba(0, 0, 0, .15)), url("../../assets/images/bg2.png");
+    background-position: 17% top;
+}
+.bg3 {
+    background: linear-gradient(rgba(0, 0, 0, .15), rgba(0, 0, 0, .15)), url("../../assets/images/bg3.png");
+    background-position: 40% top;
+}
+.bg4 {
+    background: linear-gradient(rgba(0, 0, 0, .15), rgba(0, 0, 0, .15)), url("../../assets/images/bg4.png");
+    background-position: 40% top;
+}
+.bg5 {
+    background: linear-gradient(rgba(0, 0, 0, .15), rgba(0, 0, 0, .15)), url("../../assets/images/bg5.png");
+    background-position: center 60%;
+}
+.bg6 {
+    background: linear-gradient(rgba(0, 0, 0, .15), rgba(0, 0, 0, .15)), url("../../assets/images/bg6.png");
+    background-position: center 80%;
+}
+
+.bg-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: auto;
+}
+
+.wrapper {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding-top: 5vh;
+    align-items: center;
+    text-align: center;
+}
+
+nav a {
+    font-family: 'Kollektif Regular', 'Poppins', sans-serif;
+    display: inline-block;
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    opacity: 50%;
+    color: white;
+    text-decoration: none;
+}
+
+#scrollDown {
+    position: absolute;
+    bottom: 4vh;
+    right: 5vw;
+    color: white;
+    animation: animate 1.5s linear infinite;
+    margin: 15px;
+}
+
+@keyframes animate {
+    0% {
+        bottom: 5vh;
+        opacity: 90%;
+    }
+    100% {
+        bottom: 3vh;
+        opacity: 40%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #scrollDown {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

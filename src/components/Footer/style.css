@@ -1,0 +1,9 @@
+footer {
+    background-color: #8097A5;
+    opacity: 80%;
+    color: white;
+    font-family: 'Kollektif Regular';
+    padding: 2vh 6vw;
+    text-align: right;
+    font-size: 0.7rem;
+}
