@@ -1,6 +1,6 @@
 #logo {
     width: 250px;
-    opacity: 100%;
+    /* opacity: 100%; */
 }
 
 #navbar {
@@ -90,8 +90,8 @@ nav a {
 }
 
 nav a:hover {
-    opacity: 50%;
-    color: white;
+    /* opacity: 50%; */
+    color: rgb(202, 202, 202);
     text-decoration: none;
 }
 
