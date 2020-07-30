@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Container, Row, Col, Collapse } from 'reactstrap';
 import data from '../../data.json';
 import './style.css';
+import Header from '../../components/Header';
 
 
 export default class Home extends React.Component {
@@ -12,7 +13,10 @@ export default class Home extends React.Component {
   render() {
     return (
       <div>
-        Home
+        <Header />
+        <div id="content">
+          Home
+        </div>
       </div>
     );
 

@@ -4,7 +4,7 @@
 }
 
 #navbar {
-    padding: 4vh 10vw;
+    padding: 4vh 10vw 4vh 6vw;
 }
 
 #homeLink {
@@ -16,7 +16,7 @@
     margin-top: 40px;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
     #homeLink, #menu {
         float: none
     }
@@ -25,42 +25,31 @@
     }
 }
 
-.arrow {
-    position: absolute;
-    color: white;
-    font-size: 2rem;
-    opacity: 35%;
-    cursor: pointer;
-}
-.arrow-left {
-    top: 50%;
-    left: 10px;
-}
-.arrow-right {
-    top: 50%;
-    right: 10px;
-}
-
 .bg1 {
     background: linear-gradient(rgba(0, 0, 0, .15), rgba(0, 0, 0, .15)), url("../../assets/images/bg1.jpg");
     background-position: center 60%;
 }
+
 .bg2 {
     background: linear-gradient(rgba(0, 0, 0, .15), rgba(0, 0, 0, .15)), url("../../assets/images/bg2.jpg");
     background-position: 17% top;
 }
+
 .bg3 {
     background: linear-gradient(rgba(0, 0, 0, .15), rgba(0, 0, 0, .15)), url("../../assets/images/bg3.jpg");
     background-position: 40% top;
 }
+
 .bg4 {
     background: linear-gradient(rgba(0, 0, 0, .15), rgba(0, 0, 0, .15)), url("../../assets/images/bg4.jpg");
     background-position: 40% top;
 }
+
 .bg5 {
     background: linear-gradient(rgba(0, 0, 0, .15), rgba(0, 0, 0, .15)), url("../../assets/images/bg5.jpg");
     background-position: center 60%;
 }
+
 .bg6 {
     background: linear-gradient(rgba(0, 0, 0, .15), rgba(0, 0, 0, .15)), url("../../assets/images/bg6.jpg");
     background-position: center 80%;
@@ -93,31 +82,4 @@ nav a:hover {
     /* opacity: 50%; */
     color: rgb(202, 202, 202);
     text-decoration: none;
-}
-
-#scrollDown {
-    position: absolute;
-    bottom: 4vh;
-    right: 5vw;
-    color: white;
-    animation: animate 1.5s linear infinite;
-    margin: 15px;
-}
-
-@keyframes animate {
-    0% {
-        bottom: 5vh;
-        opacity: 90%;
-    }
-    100% {
-        bottom: 3vh;
-        opacity: 40%;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    #scrollDown {
-        left: 50%;
-        transform: translateX(-50%);
-    }
 }

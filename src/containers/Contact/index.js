@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, Form, FormGroup, Label, Input, FormText, Row, Col } from 'reactstrap';
 import './style.css';
+import Header from "../../components/Header";
 
 export default class Contact extends React.Component {
   constructor(props) {
@@ -14,49 +15,54 @@ export default class Contact extends React.Component {
   render() {
     const { status } = this.state;
     return (
-      <Row>
-        <Col>
-          <h1>Kontakt do mnie</h1>
+      <div>
+        <Header />
+        <div id="content">
+          <Row>
+            <Col>
+              <h1>Kontakt do mnie</h1>
 
-          <a href="mailto:anna.nogalska@interia.eu" className="a-link">
-            <i class="icon fas fa-envelope" />
-            <p>anna.nogalska@interia.eu</p>
-          </a>
+              <a href="mailto:anna.nogalska@interia.eu" className="a-link">
+                <i class="icon fas fa-envelope" />
+                <p>anna.nogalska@interia.eu</p>
+              </a>
 
-          <i class="icon fas fa-phone"></i>
-          <p>123 456 789</p>
+              <i class="icon fas fa-phone"></i>
+              <p>123 456 789</p>
 
-          <a href="https://www.instagram.com/annanogalska.photodiary/" className="a-link">
-            <i class="icon fab fa-instagram" id="instagram-icon" />
-            <p>@annanogalska.photodiary</p></a>
+              <a href="https://www.instagram.com/annanogalska.photodiary/" className="a-link">
+                <i class="icon fab fa-instagram" id="instagram-icon" />
+                <p>@annanogalska.photodiary</p></a>
 
-          <a href="https://www.facebook.com/annanogalska.photodiary/" className="a-link">
-            <i class="icon fab fa-facebook" />
-            <p>fb.com/annanogalska.photodiary</p></a>
+              <a href="https://www.facebook.com/annanogalska.photodiary/" className="a-link">
+                <i class="icon fab fa-facebook" />
+                <p>fb.com/annanogalska.photodiary</p></a>
 
-            <div className="separator"><hr/></div>
+              <div className="separator"><hr /></div>
 
-        </Col>
-        <Col md="6" xs="12">
-          <h3>Napisz do mnie</h3>
-          <Form
-            onSubmit={this.submitForm}
-            action="https://formspree.io/xvowddrj"
-            method="POST"
-          >
-            <Label>Imię i Nazwisko:</Label>
-            <Input type="text" name="name" />
-            <Label>Email:</Label>
-            <Input type="email" name="email" />
-            <Label>Wiadomość:</Label>
-            <Input type="textarea" name="message" rows="4" style={{ resize: "none" }} />
-            <div className="buttonArea">
-            {status === "SUCCESS" ? <p>Dziękuję za wiadomość!</p> : <Button>Wyślij</Button>}
-            {status === "ERROR" && <p>Wystąpił błąd - spróbuj ponownie później.</p>}
-            </div>
-          </Form>
-        </Col>
-      </Row>
+            </Col>
+            <Col md="6" xs="12">
+              <h3>Napisz do mnie</h3>
+              <Form
+                onSubmit={this.submitForm}
+                action="https://formspree.io/xvowddrj"
+                method="POST"
+              >
+                <Label>Imię i Nazwisko:</Label>
+                <Input type="text" name="name" />
+                <Label>Email:</Label>
+                <Input type="email" name="email" />
+                <Label>Wiadomość:</Label>
+                <Input type="textarea" name="message" rows="4" style={{ resize: "none" }} />
+                <div className="buttonArea">
+                  {status === "SUCCESS" ? <p>Dziękuję za wiadomość!</p> : <Button>Wyślij</Button>}
+                  {status === "ERROR" && <p>Wystąpił błąd - spróbuj ponownie później.</p>}
+                </div>
+              </Form>
+            </Col>
+          </Row>
+        </div>
+      </div>
     );
   }
 

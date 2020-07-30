@@ -6,14 +6,14 @@ import 'react-slideshow-image/dist/styles.css'
 
 const Header = (props) => {
     const bgClasses = [
-        "bg1", "bg2", "bg3", "bg4", "bg5", "bg6"
+        "bg1", "bg2", "bg3", "bg4"
     ]
 
     const fadeProperties = {
         duration: 3000,
         transitionDuration: 1700,
-        prevArrow: <div className="arrow arrow-left"><i class="fas fa-chevron-left"></i></div>,
-        nextArrow: <div className="arrow arrow-right"><i class="fas fa-chevron-right"></i></div>
+        prevArrow: <span></span>,
+        nextArrow: <span></span>
     };
 
     return (
@@ -30,9 +30,9 @@ const Header = (props) => {
                                         <img id="logo" src={require("../../assets/images/logo.png")} alt="logo" />
                                     </a>
                                     <div id="menu">
-                                        <NavLink to="/o-mnie">O MNIE</NavLink>
-                                        <NavLink to="/oferta">OFERTA</NavLink>
-                                        <NavLink to="/kontakt">KONTAKT</NavLink>
+                                        <a href="/o-mnie">O MNIE</a>
+                                        <a href="/oferta">OFERTA</a>
+                                        <a href="/kontakt">KONTAKT</a>
                                     </div>
                                 </nav>
                             </div>
