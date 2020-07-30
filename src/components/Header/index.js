@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Fade } from 'react-slideshow-image';
 import './style.css';
 import 'react-slideshow-image/dist/styles.css'
@@ -30,9 +30,9 @@ const Header = (props) => {
                                         <img id="logo" src={require("../../assets/images/logo.png")} alt="logo" />
                                     </a>
                                     <div id="menu">
-                                        <a href="/o-mnie">O MNIE</a>
-                                        <a href="/oferta">OFERTA</a>
-                                        <a href="/kontakt">KONTAKT</a>
+                                        <Link to="/o-mnie">O MNIE</Link>
+                                        <Link to="/oferta">OFERTA</Link>
+                                        <Link to="/kontakt">KONTAKT</Link>
                                     </div>
                                 </nav>
                             </div>
