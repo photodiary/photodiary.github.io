@@ -30,9 +30,9 @@ const Header = (props) => {
                                         <img id="logo" src={require("../../assets/images/logo.png")} alt="logo" />
                                     </a>
                                     <div id="menu">
-                                        <Link to="/o-mnie">O MNIE</Link>
-                                        <Link to="/oferta">OFERTA</Link>
-                                        <Link to="/kontakt">KONTAKT</Link>
+                                        <Link to="/#/o-mnie">O MNIE</Link>
+                                        <Link to="/#/oferta">OFERTA</Link>
+                                        <Link to="/#/kontakt">KONTAKT</Link>
                                     </div>
                                 </nav>
                             </div>

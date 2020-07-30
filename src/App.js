@@ -18,7 +18,6 @@ function App() {
           <Route path="/o-mnie" exact component={About} />
           <Route path="/oferta" component={Offer} />
           <Route path="/kontakt" component={Contact} />
-          <Route component={Home} />
         </Switch>
         {/* <Instafeed/> */}
         {/* <Footer/> */}
