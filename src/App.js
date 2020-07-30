@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter, Route, Link } from 'react-router-dom';
 import Home from './containers/Home';
 import About from './containers/About';
 import Offer from './containers/Offer';
@@ -12,16 +12,14 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Switch>
+       <HashRouter basename='/'>
           <Route path="/o-mnie" exact component={About} />
           <Route path="/oferta" component={Offer} />
           <Route path="/kontakt" component={Contact} />
-          <Route path="/" exact component={Home} />
-        </Switch>
+          <Route path="/" component={Home} />
         {/* <Instafeed/> */}
         {/* <Footer/> */}
-      </Router>
+      </HashRouter>
     </div>
   );
 }
