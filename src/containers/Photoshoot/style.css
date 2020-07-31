@@ -1,8 +1,14 @@
 .photoColumn{
-    padding: 0 15vw;
+    padding: 0 8vw;
 }
 
-.photoColumn img{
+.photoColumn img {
     width: 100%;
     padding: 1rem 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .photoColumn{
+        padding: 0;
+    }
 }
