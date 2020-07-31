@@ -1,7 +1,7 @@
 {
     "data" : [
         {
-            "categoryId": 1,
+            "categoryId": 0,
             "categoryName": "Sesje portretowe",
             "photoshoots": [
                 {
@@ -48,7 +48,7 @@
             ]
         },
         {
-            "categoryId": 2,
+            "categoryId": 1,
             "categoryName": "Sesje narzeczeńskie",
             "photoshoots": [
                 {

@@ -1,0 +1,8 @@
+.photoColumn{
+    padding: 0 15vw;
+}
+
+.photoColumn img{
+    width: 100%;
+    padding: 1rem 0;
+}
