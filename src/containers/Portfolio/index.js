@@ -6,7 +6,7 @@ import Header from '../../components/Header';
 import PhotoGallery from '../../components/PhotoGallery';
 
 
-export default class Home extends React.Component {
+export default class Portfolio extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -18,9 +18,9 @@ export default class Home extends React.Component {
       <div>
         <Header />
         <div id="content">
-        {/* {data.map((category, id) => {
+        {data.map((category, id) => {
           return(<PhotoGallery category={category.categoryName} photoshoots={category.photoshoots}></PhotoGallery>)
-        })} */}
+        })}
         </div>
       </div>
     );

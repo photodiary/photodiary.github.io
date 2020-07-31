@@ -5,47 +5,93 @@
             "categoryName": "Sesje portretowe",
             "photoshoots": [
                 {
-                    "title": "Kasia",
+                    "title": "Tytuł",
+                    "id": 0,
+                    "thumbnail": "s01.jpg",
+                    "photos": [
+                        {"fullSize":"s01p01.jpg", "thumbnail": "s01p01-t.jpg"},
+                        {"fullSize":"s01p02.jpg", "thumbnail": "s01p02-t.jpg"},
+                        {"fullSize":"s01p03.jpg", "thumbnail": "s01p03-t.jpg"},
+                        {"fullSize":"s01p04.jpg", "thumbnail": "s01p04-t.jpg"},
+                        {"fullSize":"s01p05.jpg", "thumbnail": "s01p05-t.jpg"},
+                        {"fullSize":"s01p06.jpg", "thumbnail": "s01p06-t.jpg"},
+                        {"fullSize":"s01p07.jpg", "thumbnail": "s01p07-t.jpg"}
+                    ]
+                },
+                {
+                    "title": "Tytuł",
                     "id": 1,
-                    "thumbnail": "c1s01p01-t.jpg",
-                    "photos": ["c1s01p01.jpg", "c1s01p02.jpg", "c1s01p03.jpg"]
+                    "thumbnail": "s02.jpg",
+                    "photos": [
+                        {"fullSize":"s02p01.jpg", "thumbnail": "s02p01-t.jpg"},
+                        {"fullSize":"s02p02.jpg", "thumbnail": "s02p02-t.jpg"},
+                        {"fullSize":"s02p03.jpg", "thumbnail": "s02p03-t.jpg"},
+                        {"fullSize":"s02p04.jpg", "thumbnail": "s02p04-t.jpg"},
+                        {"fullSize":"s02p05.jpg", "thumbnail": "s02p05-t.jpg"},
+                        {"fullSize":"s02p06.jpg", "thumbnail": "s02p06-t.jpg"}
+                    ]
                 },
                 {
-                    "title": "Cecylia",
-                    "thumbnail": "c1s02p01-t.jpg",
-                    "photos": ["c1s02p01.jpg", "c1s01p02.jpg", "c1s01p03.jpg"]
-                },
-                {
-                    "title": "Natalia",
-                    "thumbnail": "c1s03p01-t.jpg",
-                    "photos": ["c1s03p01.jpg", "c1s03p02.jpg", "c1s03p03.jpg"]
+                    "title": "Tytuł",
+                    "id": 2,
+                    "thumbnail": "s01.jpg",
+                    "photos": [
+                        {"fullSize":"s01p01.jpg", "thumbnail": "s01p01-t.jpg"},
+                        {"fullSize":"s01p02.jpg", "thumbnail": "s01p02-t.jpg"},
+                        {"fullSize":"s01p03.jpg", "thumbnail": "s01p03-t.jpg"},
+                        {"fullSize":"s01p04.jpg", "thumbnail": "s01p04-t.jpg"},
+                        {"fullSize":"s01p05.jpg", "thumbnail": "s01p05-t.jpg"},
+                        {"fullSize":"s01p06.jpg", "thumbnail": "s01p06-t.jpg"},
+                        {"fullSize":"s01p07.jpg", "thumbnail": "s01p07-t.jpg"}
+                    ]
                 }
             ]
         },
-
         {
             "categoryId": 2,
             "categoryName": "Sesje narzeczeńskie",
             "photoshoots": [
                 {
-                    "title": "Marieta&Piotrek",
-                    "thumbnail": "c2s01p01-t.jpg",
-                    "photos": ["c2s01p01.jpg", "c2s01p002.jpg", "c2s01p03.jpg"]
+                    "title": "Tytuł",
+                    "id": 0,
+                    "thumbnail": "s01.jpg",
+                    "photos": [
+                        {"fullSize":"s01p01.jpg", "thumbnail": "s01p01-t.jpg"},
+                        {"fullSize":"s01p02.jpg", "thumbnail": "s01p02-t.jpg"},
+                        {"fullSize":"s01p03.jpg", "thumbnail": "s01p03-t.jpg"},
+                        {"fullSize":"s01p04.jpg", "thumbnail": "s01p04-t.jpg"},
+                        {"fullSize":"s01p05.jpg", "thumbnail": "s01p05-t.jpg"},
+                        {"fullSize":"s01p06.jpg", "thumbnail": "s01p06-t.jpg"},
+                        {"fullSize":"s01p07.jpg", "thumbnail": "s01p07-t.jpg"}
+                    ]
                 },
                 {
-                    "title": "Aneta&Artur",
-                    "thumbnail": "c2s02p01-t.jpg",
-                    "photos": ["c2s02p01.jpg", "c2s01p02.jpg", "c2s01p03.jpg"]
+                    "title": "Tytuł",
+                    "id": 1,
+                    "thumbnail": "s01.jpg",
+                    "photos": [
+                        {"fullSize":"s01p01.jpg", "thumbnail": "s01p01-t.jpg"},
+                        {"fullSize":"s01p02.jpg", "thumbnail": "s01p02-t.jpg"},
+                        {"fullSize":"s01p03.jpg", "thumbnail": "s01p03-t.jpg"},
+                        {"fullSize":"s01p04.jpg", "thumbnail": "s01p04-t.jpg"},
+                        {"fullSize":"s01p05.jpg", "thumbnail": "s01p05-t.jpg"},
+                        {"fullSize":"s01p06.jpg", "thumbnail": "s01p06-t.jpg"},
+                        {"fullSize":"s01p07.jpg", "thumbnail": "s01p07-t.jpg"}
+                    ]
                 },
                 {
-                    "title": "Andżelika&Szymon",
-                    "thumbnail": "c2s03p01-t.jpg",
-                    "photos": ["c2s03p01.jpg", "c2s03p02.jpg"]
-                },
-                {
-                    "title": "Weronika&Piotr",
-                    "thumbnail": "c2s04p01-t.jpg",
-                    "photos": ["c2s04p01.jpg", "c2s04p02.jpg", "c2s04p03.jpg", "c2s04p03.jpg"]
+                    "title": "Tytuł",
+                    "id": 2,
+                    "thumbnail": "s01.jpg",
+                    "photos": [
+                        {"fullSize":"s01p01.jpg", "thumbnail": "s01p01-t.jpg"},
+                        {"fullSize":"s01p02.jpg", "thumbnail": "s01p02-t.jpg"},
+                        {"fullSize":"s01p03.jpg", "thumbnail": "s01p03-t.jpg"},
+                        {"fullSize":"s01p04.jpg", "thumbnail": "s01p04-t.jpg"},
+                        {"fullSize":"s01p05.jpg", "thumbnail": "s01p05-t.jpg"},
+                        {"fullSize":"s01p06.jpg", "thumbnail": "s01p06-t.jpg"},
+                        {"fullSize":"s01p07.jpg", "thumbnail": "s01p07-t.jpg"}
+                    ]
                 }
             ]
         }
