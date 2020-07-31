@@ -19,7 +19,6 @@ function App() {
           <Route path="/oferta" component={Offer} />
           <Route path="/kontakt" component={Contact} />
         </Switch>
-        <Instafeed/>
         <Footer/>
       </HashRouter>
     </div>
