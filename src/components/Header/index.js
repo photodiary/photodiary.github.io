@@ -6,7 +6,7 @@ import 'react-slideshow-image/dist/styles.css'
 
 const Header = (props) => {
     const bgClasses = [
-        "bg1", "bg2", "bg3", "bg4", "bg5", "bg6"
+        "bg1", "bg2", "bg3", "bg4", "bg5", "bg6", "bg7"
     ]
 
     const fadeProperties = {

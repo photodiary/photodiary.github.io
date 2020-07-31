@@ -6,17 +6,13 @@ import Slider from 'react-slick';
 import './style.css';
 import { Link } from 'react-router-dom';
 
-export default class PhotoGallery extends React.Component {
+export default class PhotoGallery2 extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             isOpen: false,
             activePhotoshoot: 1
         }
-    }
-
-    redirect = (id) => {
-        window.location.href = "/o-mnie" //"/sesja/" + id;
     }
 
     render() {

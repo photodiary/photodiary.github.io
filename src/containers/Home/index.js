@@ -3,7 +3,7 @@ import { Container, Row, Col, Collapse } from 'reactstrap';
 import dataFile from '../../data.json';
 import './style.css';
 import Header from '../../components/Header';
-import PhotoGallery from '../../components/PhotoGallery';
+import PhotoGallery2 from '../../components/PhotoGallery2';
 
 
 export default class Home extends React.Component {
@@ -19,7 +19,7 @@ export default class Home extends React.Component {
         <Header />
         <div id="content">
         {data.map((category, id) => {
-          return(<PhotoGallery catId={category.categoryId} category={category.categoryName} photoshoots={category.photoshoots}></PhotoGallery>)
+          return(<PhotoGallery2 catId={category.categoryId} category={category.categoryName} photoshoots={category.photoshoots}></PhotoGallery2>)
         })}
         </div>
       </div>

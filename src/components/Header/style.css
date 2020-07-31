@@ -55,6 +55,11 @@
     background-position: 20% 30%;
 }
 
+.bg7 {
+    background: linear-gradient(rgba(0, 0, 0, .15), rgba(0, 0, 0, .15)), url("../../assets/images/bg7.jpg");
+    background-position: 25% center;
+}
+
 .bg-image {
     background-repeat: no-repeat;
     background-size: cover;
