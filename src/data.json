@@ -45,54 +45,6 @@
                     ]
                 }
             ]
-        },
-        {
-            "categoryId": 1,
-            "categoryName": "Sesje narzeczeńskie",
-            "photoshoots": [
-                {
-                    "title": "Tytuł",
-                    "id": 0,
-                    "thumbnail": "s01.jpg",
-                    "photos": [
-                        {"fullSize":"s01p01.jpg", "thumbnail": "s01p01-t.jpg"},
-                        {"fullSize":"s01p02.jpg", "thumbnail": "s01p02-t.jpg"},
-                        {"fullSize":"s01p03.jpg", "thumbnail": "s01p03-t.jpg"},
-                        {"fullSize":"s01p04.jpg", "thumbnail": "s01p04-t.jpg"},
-                        {"fullSize":"s01p05.jpg", "thumbnail": "s01p05-t.jpg"},
-                        {"fullSize":"s01p06.jpg", "thumbnail": "s01p06-t.jpg"},
-                        {"fullSize":"s01p07.jpg", "thumbnail": "s01p07-t.jpg"}
-                    ]
-                },
-                {
-                    "title": "Tytuł",
-                    "id": 1,
-                    "thumbnail": "s01.jpg",
-                    "photos": [
-                        {"fullSize":"s01p01.jpg", "thumbnail": "s01p01-t.jpg"},
-                        {"fullSize":"s01p02.jpg", "thumbnail": "s01p02-t.jpg"},
-                        {"fullSize":"s01p03.jpg", "thumbnail": "s01p03-t.jpg"},
-                        {"fullSize":"s01p04.jpg", "thumbnail": "s01p04-t.jpg"},
-                        {"fullSize":"s01p05.jpg", "thumbnail": "s01p05-t.jpg"},
-                        {"fullSize":"s01p06.jpg", "thumbnail": "s01p06-t.jpg"},
-                        {"fullSize":"s01p07.jpg", "thumbnail": "s01p07-t.jpg"}
-                    ]
-                },
-                {
-                    "title": "Tytuł",
-                    "id": 2,
-                    "thumbnail": "s01.jpg",
-                    "photos": [
-                        {"fullSize":"s01p01.jpg", "thumbnail": "s01p01-t.jpg"},
-                        {"fullSize":"s01p02.jpg", "thumbnail": "s01p02-t.jpg"},
-                        {"fullSize":"s01p03.jpg", "thumbnail": "s01p03-t.jpg"},
-                        {"fullSize":"s01p04.jpg", "thumbnail": "s01p04-t.jpg"},
-                        {"fullSize":"s01p05.jpg", "thumbnail": "s01p05-t.jpg"},
-                        {"fullSize":"s01p06.jpg", "thumbnail": "s01p06-t.jpg"},
-                        {"fullSize":"s01p07.jpg", "thumbnail": "s01p07-t.jpg"}
-                    ]
-                }
-            ]
         }
 
     ]

@@ -18,9 +18,9 @@ export default class Home extends React.Component {
       <div>
         <Header />
         <div id="content">
-        {/* {data.map((category, id) => {
-          return(<PhotoGallery category={category.categoryName} photoshoots={category.photoshoots}></PhotoGallery>)
-        })} */}
+        {data.map((category, id) => {
+          return(<PhotoGallery catId={category.categoryId} category={category.categoryName} photoshoots={category.photoshoots}></PhotoGallery>)
+        })}
         </div>
       </div>
     );
