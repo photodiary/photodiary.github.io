@@ -47,12 +47,12 @@
 
 .bg5 {
     background: linear-gradient(rgba(0, 0, 0, .15), rgba(0, 0, 0, .15)), url("../../assets/images/bg5.jpg");
-    background-position: center 60%;
+    background-position: 20% 50%;
 }
 
 .bg6 {
     background: linear-gradient(rgba(0, 0, 0, .15), rgba(0, 0, 0, .15)), url("../../assets/images/bg6.jpg");
-    background-position: center 80%;
+    background-position: 40% 30%;
 }
 
 .bg-image {

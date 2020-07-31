@@ -6,11 +6,11 @@ import 'react-slideshow-image/dist/styles.css'
 
 const Header = (props) => {
     const bgClasses = [
-        "bg1", "bg2", "bg3", "bg4"
+        "bg1", "bg2", "bg3", "bg4", "bg5", "bg6"
     ]
 
     const fadeProperties = {
-        duration: 3000,
+        duration: 2000,
         transitionDuration: 1700,
         prevArrow: <span></span>,
         nextArrow: <span></span>

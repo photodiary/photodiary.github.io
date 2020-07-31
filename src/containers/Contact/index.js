@@ -27,9 +27,6 @@ export default class Contact extends React.Component {
                 <p>anna.nogalska@interia.eu</p>
               </a>
 
-              <i class="icon fas fa-phone"></i>
-              <p>123 456 789</p>
-
               <a href="https://www.instagram.com/annanogalska.photodiary/" className="a-link">
                 <i class="icon fab fa-instagram" id="instagram-icon" />
                 <p>@annanogalska.photodiary</p></a>
@@ -37,6 +34,9 @@ export default class Contact extends React.Component {
               <a href="https://www.facebook.com/annanogalska.photodiary/" className="a-link">
                 <i class="icon fab fa-facebook" />
                 <p>fb.com/annanogalska.photodiary</p></a>
+
+              <i class="icon fas fa-map-marker-alt"></i>
+              <p>Śląsk</p>
 
               <div className="separator"><hr /></div>
 
