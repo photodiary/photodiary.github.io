@@ -32,7 +32,7 @@
                     ]
                 },
                 {
-                    "title": "Tytuł",
+                    "title": "Laura",
                     "id": 2,
                     "thumbnail": "s03.jpg",
                     "photos": [
@@ -42,6 +42,24 @@
                         {"fullSize":"s03p04.jpg", "thumbnail": "s01p04-t.jpg"},
                         {"fullSize":"s03p05.jpg", "thumbnail": "s01p05-t.jpg"},
                         {"fullSize":"s03p06.jpg", "thumbnail": "s01p06-t.jpg"}
+                    ]
+                }
+            ]
+        },
+        {
+            "categoryId": 1,
+            "categoryName": "Sesje narzeczeńskie",
+            "photoshoots": [
+                {
+                    "title": "Aneta&Artur",
+                    "id": 0,
+                    "thumbnail": "s04.jpg",
+                    "photos": [
+                        {"fullSize":"s04p01.jpg", "thumbnail": "s01p01-t.jpg"},
+                        {"fullSize":"s04p02.jpg", "thumbnail": "s01p02-t.jpg"},
+                        {"fullSize":"s04p03.jpg", "thumbnail": "s01p03-t.jpg"},
+                        {"fullSize":"s04p04.jpg", "thumbnail": "s01p04-t.jpg"},
+                        {"fullSize":"s04p05.jpg", "thumbnail": "s01p05-t.jpg"}
                     ]
                 }
             ]
