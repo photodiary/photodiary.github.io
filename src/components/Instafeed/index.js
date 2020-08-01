@@ -25,13 +25,11 @@ const Instafeed = (props) => {
     return (
         <div id="instafeedContainer">
         <hr/>
-        
             <div>
                 <a href="https://www.instagram.com/annanogalska.photodiary/" className="instagram-link fab fa-instagram"><a className="instagram-name">Instagram</a></a>
             </div>
             <div id="instagram-feed1" ></div>
          
-
         </div>
     );
 
