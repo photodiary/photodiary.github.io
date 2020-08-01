@@ -39,7 +39,7 @@ export default class PhotoGallery2 extends React.Component {
                         )
                     })}
                 </Row>
-                <hr/>
+                {this.props.isLast ? "" : <hr/>}
             </div>
         )
     }

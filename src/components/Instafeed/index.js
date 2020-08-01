@@ -2,27 +2,36 @@ import React from 'react';
 import './style.css';
 
 const Instafeed = (props) => {
+
+    const $ = window.$;
+
+    $(window).on('load', function(){
+        $.instagramFeed({
+            'username': 'annanogalska.photodiary',
+            'container': "#instagram-feed1",
+            'display_profile': false,
+            'display_biography': false,
+            'display_gallery': true,
+            'callback': null,
+            'styling': true,
+            'items': 4,
+            'items_per_row': 4,
+            'margin': 1,
+            'lazy_load': true,
+            'on_error': console.error
+        });
+    });
+
     return (
-        <div id="content">
+        <div id="instafeedContainer">
+        <hr/>
         
-            {/* <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script> */}
-            <div style={{ marginBottom: "10px" }}>
+            <div>
                 <a href="https://www.instagram.com/annanogalska.photodiary/" className="instagram-link fab fa-instagram"><a className="instagram-name">Instagram</a></a>
             </div>
-            {/* <!-- SnapWidget --> */}
-            <script src="https://snapwidget.com/js/snapwidget.js"></script>
-            <iframe src="https://snapwidget.com/embed/856833" 
-                className="snapwidget-widget" 
-                allowtransparency="true" 
-                frameborder="0" 
-                scrolling="no" 
-                style={{border:"none", overflow:"hidden", width: "100%"}}></iframe>
-            {/* <iframe src="//lightwidget.com/widgets/0d6d51756b575edf8e12e076aceaca35.html"
-                scrolling="no" allowtransparency="true" className="lightwidget-widget"
-                style={{ width: "100%", border: "0", overflow: "hidden" }}>
-            </iframe> */}
+            <div id="instagram-feed1" ></div>
+         
 
-            
         </div>
     );
 

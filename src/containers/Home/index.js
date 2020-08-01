@@ -11,18 +11,25 @@ export default class Home extends React.Component {
     super(props);
   }
 
+  
   render() {
     const data = dataFile.data;
-    
+    const categoriesNumber = data.length;
+
+
+
     return (
       <div>
         <Header />
         <div id="content">
         {data.map((category, id) => {
-          return(<PhotoGallery2 catId={category.categoryId} category={category.categoryName} photoshoots={category.photoshoots}></PhotoGallery2>)
+          return(<PhotoGallery2 catId={category.categoryId} category={category.categoryName} photoshoots={category.photoshoots} isLast={id+1==categoriesNumber ? true : false}></PhotoGallery2>)
         })}
         </div>
-      </div>
+        </div>
+
+
+    
     );
 
   }

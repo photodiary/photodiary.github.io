@@ -21,6 +21,7 @@ function App() {
           <Route path="/kontakt" component={Contact} />
           <Route path="/sesja/:catId/:id" component={Photoshoot}/>
         </Switch>
+        <Instafeed/>
         <Footer/>
       </HashRouter>
     </div>

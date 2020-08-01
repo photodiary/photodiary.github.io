@@ -22,3 +22,13 @@
 .instagramContent {
     margin: 0 20vw; 
 }
+
+#instafeedContainer {
+    overflow: hidden;
+    margin: 0 12vw;
+}
+
+
+#instafeedContainer img:hover {
+    opacity: 0.8;
+}
