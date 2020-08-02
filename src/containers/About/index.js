@@ -11,7 +11,7 @@ const About = (props) => {
             <div id="content">
                 <Row>
                     <Col cs="12" md="4">
-                        <img id="profilePhoto" src={require("../../assets/images/about_me.png")} />
+                        <img id="profilePhoto" src={require("../../assets/images/about_me.jpg")} />
                     </Col>
                     <Col xs="12" md="8">
                     <div style={{textAlign: "left"}}>
@@ -29,7 +29,6 @@ const About = (props) => {
                     <p>Obszar mojego działania to nie tylko Śląsk, w którym mieszkam, ale także cała Polska.</p>
                     <p>Chętnie uwiecznię Was na zdjęciach! 😊</p>
                     <p>Zapraszam do współpracy!</p>
-
 
                     </div>
                     </Col>
