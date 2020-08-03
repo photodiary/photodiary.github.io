@@ -19,7 +19,7 @@ export default class Contact extends React.Component {
       <hr/>
         <Row>
           <Col>
-            <h1>Kontakt do mnie</h1>
+            <h1>Kontakt</h1>
 
             <a href="mailto:anna.nogalska@interia.eu" className="a-link">
               <i class="icon fas fa-envelope" />

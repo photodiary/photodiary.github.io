@@ -62,6 +62,18 @@
                         {"fullSize":"s05p06.jpg", "thumbnail": "s05p06-t.jpg"},
                         {"fullSize":"s05p07.jpg", "thumbnail": "s05p07-t.jpg"}
                     ]
+                },
+                {
+                    "title": "Milena",
+                    "id": 4,
+                    "thumbnail": "s06.jpg",
+                    "photos": [
+                        {"fullSize":"s06p01.jpg", "thumbnail": "s06p01-t.jpg"},
+                        {"fullSize":"s06p02.jpg", "thumbnail": "s06p02-t.jpg"},
+                        {"fullSize":"s06p03.jpg", "thumbnail": "s06p03-t.jpg"},
+                        {"fullSize":"s06p04.jpg", "thumbnail": "s06p04-t.jpg"},
+                        {"fullSize":"s06p05.jpg", "thumbnail": "s06p05-t.jpg"}
+                    ]
                 }
             ]
         },
