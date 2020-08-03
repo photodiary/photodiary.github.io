@@ -31,13 +31,7 @@ export default class PhotoGallery extends React.Component {
             }
         } else {
             this.setState({activePhotoshoot: id});
-            setTimeout(
-                function() {
-                    this.open();
-                }
-                .bind(this),
-                500
-            );
+            this.open();
             
         }
     }
@@ -46,13 +40,12 @@ export default class PhotoGallery extends React.Component {
         const settings = {
             className: "slider variable-width",
             dots: true,
-            // infinite: true,
+            infinite: false,
             speed: 500,
             slidesToShow: 1,
-            // slidesToShow: 3,
             slidesToScroll: 1,
             variableWidth: true,
-            // lazyLoad: true
+            rows: 1,
           };
 
         const $ = window.$;
@@ -90,7 +83,7 @@ export default class PhotoGallery extends React.Component {
                     })}
                 </Row>
                 <Row xs="12">
-                        <Collapse isOpen={this.state.isOpen} style={{width: "90%"}}>
+                        <Collapse isOpen={this.state.isOpen} style={{width: "100%"}}>
                         <br/>
                             <div>
                                 {this.props.photoshoots.map(
@@ -113,7 +106,7 @@ export default class PhotoGallery extends React.Component {
                         </Collapse>
                         
                     </Row>
-                    <hr/>
+                    {this.props.isLast ? "" : <hr/>}
             </div>
         )
     }

@@ -16,6 +16,32 @@ const Header = (props) => {
         nextArrow: <span></span>
     };
 
+    const $ = window.$;
+    $(document).ready(function () {
+        $("#navbar-fixed").hide(); //Hide the navigation bar first
+        $(window).scroll(function () {  //Listen for the window's scroll event
+            if (isScrolledAfterElement("#header-end")) {
+                $('#navbar-fixed').fadeIn();
+            } else {
+                $('#navbar-fixed').fadeOut();
+            }
+        });
+
+        //Function that returns true if the window has scrolled beyond the given element
+        function isScrolledAfterElement(elem) {
+            var $elem = $(elem);
+            var $window = $(window);
+
+            var docViewTop = $window.scrollTop();
+            var elemPos = $elem.offset().top;
+
+            return elemPos <= docViewTop;
+        }
+    });
+
+
+
+
     return (
         <div className="slide-container">
             <div id="navbar-content" >
@@ -30,15 +56,27 @@ const Header = (props) => {
                                         <img id="logo" src={require("../../assets/images/logo.png")} alt="logo" />
                                     </a>
                                     <div id="menu">
-                                        <Link to="/o-mnie">O MNIE</Link>
-                                        <Link to="/oferta">OFERTA</Link>
-                                        <Link to="/kontakt">KONTAKT</Link>
+                                        <a href="#portfolio">PORTFOLIO</a>
+                                        <a href="#o-mnie">O MNIE</a>
+                                        <a href="#oferta">OFERTA</a>
+                                        <a href="#kontakt">KONTAKT</a>
                                     </div>
                                 </nav>
                             </div>
                         )
                     })}
                 </Fade>
+                <div id="header-end"></div>
+            </div>
+            <div id="navbar-fixed">
+            
+                    <nav>
+                        <a href="#portfolio">PORTFOLIO</a>
+                        <a href="#o-mnie">O MNIE</a>
+                        <a href="#oferta">OFERTA</a>
+                        <a href="#kontakt">KONTAKT</a>
+                    </nav>
+                
             </div>
         </div>
     );

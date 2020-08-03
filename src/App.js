@@ -14,15 +14,12 @@ function App() {
   return (
     <div className="App">
       <HashRouter basename='/'>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/o-mnie" exact component={About} />
-          <Route path="/oferta" component={Offer} />
-          <Route path="/kontakt" component={Contact} />
-          <Route path="/sesja/:catId/:id" component={Photoshoot}/>
-        </Switch>
-        <Instafeed/>
-        <Footer/>
+        <Header />
+        <Home />
+        <About />
+        <Contact />
+        <Instafeed />
+        <Footer />
       </HashRouter>
     </div>
   );

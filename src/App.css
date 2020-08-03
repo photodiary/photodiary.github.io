@@ -4,8 +4,12 @@ body {
   color: var(--text-color);
 }
 
-#content {
+.content {
   margin: 0 12vw;
-  padding-top: 6vh;
   font-family: 'Lato', sans-serif;
+}
+
+@font-face {
+  font-family: 'Tagger';
+  src:  url('./assets/Tagger-Regular.woff') format('woff');
 }

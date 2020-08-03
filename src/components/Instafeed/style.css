@@ -32,3 +32,17 @@
 #instafeedContainer img:hover {
     opacity: 0.8;
 }
+
+@media only screen and (max-width: 600px) {
+    #instagram-feed1 {
+        display: none
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    #instagram-feed2 {
+        display: none
+    }
+}
+
+

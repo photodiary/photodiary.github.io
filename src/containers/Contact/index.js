@@ -15,53 +15,51 @@ export default class Contact extends React.Component {
   render() {
     const { status } = this.state;
     return (
-      <div>
-        <Header />
-        <div id="content">
-          <Row>
-            <Col>
-              <h1>Kontakt do mnie</h1>
+      <div id="kontakt" className="content" style={{padding: "10px"}}>
+      <hr/>
+        <Row>
+          <Col>
+            <h1>Kontakt do mnie</h1>
 
-              <a href="mailto:anna.nogalska@interia.eu" className="a-link">
-                <i class="icon fas fa-envelope" />
-                <p>anna.nogalska@interia.eu</p>
-              </a>
+            <a href="mailto:anna.nogalska@interia.eu" className="a-link">
+              <i class="icon fas fa-envelope" />
+              <p>anna.nogalska@interia.eu</p>
+            </a>
 
-              <a href="https://www.instagram.com/annanogalska.photodiary/" className="a-link">
-                <i class="icon fab fa-instagram" id="instagram-icon" />
-                <p>@annanogalska.photodiary</p></a>
+            <a href="https://www.instagram.com/annanogalska.photodiary/" className="a-link">
+              <i class="icon fab fa-instagram" id="instagram-icon" />
+              <p>@annanogalska.photodiary</p></a>
 
-              <a href="https://www.facebook.com/annanogalska.photodiary/" className="a-link">
-                <i class="icon fab fa-facebook" />
-                <p>fb.com/annanogalska.photodiary</p></a>
+            <a href="https://www.facebook.com/annanogalska.photodiary/" className="a-link">
+              <i class="icon fab fa-facebook" />
+              <p>fb.com/annanogalska.photodiary</p></a>
 
-              <i class="icon fas fa-map-marker-alt"></i>
-              <p>Śląsk</p>
+            <i class="icon fas fa-map-marker-alt"></i>
+            <p>Śląsk</p>
 
-              <div className="separator"><hr /></div>
+            <div className="separator"><hr /></div>
 
-            </Col>
-            <Col md="6" xs="12">
-              <h3>Napisz do mnie</h3>
-              <Form
-                onSubmit={this.submitForm}
-                action="https://formspree.io/xvowddrj"
-                method="POST"
-              >
-                <Label>Imię i Nazwisko:</Label>
-                <Input type="text" name="name" />
-                <Label>Email:</Label>
-                <Input type="email" name="email" />
-                <Label>Wiadomość:</Label>
-                <Input type="textarea" name="message" rows="4" style={{ resize: "none" }} />
-                <div className="buttonArea">
-                  {status === "SUCCESS" ? <p>Dziękuję za wiadomość!</p> : <Button>Wyślij</Button>}
-                  {status === "ERROR" && <p>Wystąpił błąd - spróbuj ponownie później.</p>}
-                </div>
-              </Form>
-            </Col>
-          </Row>
-        </div>
+          </Col>
+          <Col md="6" xs="12">
+            <h3>Napisz do mnie</h3>
+            <Form
+              onSubmit={this.submitForm}
+              action="https://formspree.io/xvowddrj"
+              method="POST"
+            >
+              <Label>Imię i Nazwisko:</Label>
+              <Input type="text" name="name" />
+              <Label>Email:</Label>
+              <Input type="email" name="email" />
+              <Label>Wiadomość:</Label>
+              <Input type="textarea" name="message" rows="4" style={{ resize: "none" }} />
+              <div className="buttonArea">
+                {status === "SUCCESS" ? <p>Dziękuję za wiadomość!</p> : <Button>Wyślij</Button>}
+                {status === "ERROR" && <p>Wystąpił błąd - spróbuj ponownie później.</p>}
+              </div>
+            </Form>
+          </Col>
+        </Row>
       </div>
     );
   }

@@ -3,7 +3,7 @@ import { Container, Row, Col, Collapse } from 'reactstrap';
 import dataFile from '../../data.json';
 import './style.css';
 import Header from '../../components/Header';
-import PhotoGallery2 from '../../components/PhotoGallery2';
+import PhotoGallery from '../../components/PhotoGallery';
 
 
 export default class Home extends React.Component {
@@ -11,25 +11,28 @@ export default class Home extends React.Component {
     super(props);
   }
 
-  
+
   render() {
     const data = dataFile.data;
     const categoriesNumber = data.length;
 
 
-
     return (
-      <div>
-        <Header />
-        <div id="content">
+      <div id="portfolio" className="content" style={{paddingTop: "55px"}}>
         {data.map((category, id) => {
-          return(<PhotoGallery2 catId={category.categoryId} category={category.categoryName} photoshoots={category.photoshoots} isLast={id+1==categoriesNumber ? true : false}></PhotoGallery2>)
+          return (
+            <PhotoGallery
+              catId={category.categoryId}
+              category={category.categoryName}
+              photoshoots={category.photoshoots}
+              isLast={id + 1 == categoriesNumber ? true : false}
+            >
+            </PhotoGallery>)
         })}
-        </div>
-        </div>
+      </div>
 
 
-    
+
     );
 
   }
