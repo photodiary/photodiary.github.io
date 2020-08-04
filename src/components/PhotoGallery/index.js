@@ -24,19 +24,19 @@ export default class PhotoGallery extends React.Component {
 
     toggle = (id) => {
         if (this.state.isOpen) {
-            if (this.state.activePhotoshoot === id){
+            if (this.state.activePhotoshoot === id) {
                 this.close();
             } else {
-                this.setState({activePhotoshoot: id});
+                this.setState({ activePhotoshoot: id });
             }
         } else {
-            this.setState({activePhotoshoot: id});
+            this.setState({ activePhotoshoot: id });
             this.open();
-            
+
         }
     }
 
-    render() {
+    getPhotoshoot = () => {
         const settings = {
             className: "slider variable-width",
             dots: true,
@@ -48,20 +48,50 @@ export default class PhotoGallery extends React.Component {
             rows: 1,
             // nextArrow: <NextArrow/>,
             // prevArrow: <PrevArrow/>
-          };
+        };
+
+        // const ps = this.props.photoshoots[this.state.activePhotoshoot];
+
+        const ps = this.props.photoshoots.find(photoshoot => { 
+            return(photoshoot.id === this.state.activePhotoshoot)
+        })
+
+        console.log("active");
+        console.log(this.state.activePhotoshoot)
+        console.log("ps")
+        console.log(ps)
+        var photos = '';
+        photos = (ps ? ps.photos : photos)
+        console.log(photos)
 
         const $ = window.$;
-        $(document).ready(function() {
-                $('.parent-container').magnificPopup({
-                  delegate: 'a', // child items selector, by clicking on it popup will open
-                  type: 'image',
-                  gallery: {
+        $(document).ready(function () {
+            $('.parent-container').magnificPopup({
+                delegate: 'a', // child items selector, by clicking on it popup will open
+                type: 'image',
+                gallery: {
                     enabled: true
-                  }
-                });
+                }
+            });
 
-          });
+        });
 
+        
+        if (photos){
+            console.log("trueee")
+            return (
+                <Slider {...settings} className="parent-container">
+                    {photos.map(photo =>
+                        <a href={require("../../assets/photos/" + photo.fullSize)}>
+                            <img class="photo" src={require("../../assets/photos/" + photo.thumbnail)} />
+                        </a>
+                    )}
+                </Slider>
+            )
+        } else { console.log("fallse")}
+    }
+
+    render() {
         return (
             <div>
                 <Row>
@@ -74,7 +104,7 @@ export default class PhotoGallery extends React.Component {
                         return (
                             <Col xs="12" md="" style={{ padding: "4px" }} className="parent-container">
                                 <div className="overlay" data-content={photoshoot.title}
-                                    onClick={() => this.toggle(index)}>
+                                    onClick={() => this.toggle(photoshoot.id)}>
                                     <img
                                         className="thumbnail"
                                         src={require("../../assets/photos/" + photoshoot.thumbnail)}
@@ -85,30 +115,22 @@ export default class PhotoGallery extends React.Component {
                     })}
                 </Row>
                 <Row xs="12">
-                        <Collapse isOpen={this.state.isOpen} style={{width: "100%"}}>
-                        <br/>
-                            <div>
-                                {this.props.photoshoots.map(
-                                    ps => {
-                                        if (ps.id === this.state.activePhotoshoot) return (
-                                            <Slider {...settings}  className="parent-container">
-                                                {ps.photos.map(photo =>
-                                                        <a  href={require("../../assets/photos/" + photo.fullSize)}>
-                                                            <img class="photo" src={require("../../assets/photos/" + photo.thumbnail)} />
-                                                        </a>
-                                                )}
-                                            </Slider>
+                    <Collapse isOpen={this.state.isOpen} style={{ width: "100%" }}>
+                        <br />
+                        <div>
+                            {this.getPhotoshoot()}
+                            {/* {this.props.photoshoots.map(
+                                ps => {
+                                    // if (ps.id === this.state.activePhotoshoot) return (
+                                    this.getPhotoshoot(ps.id);
+                                }
+                            )} */}
+                        </div>
 
-                                        )
+                    </Collapse>
 
-                                    }
-                                )}
-                            </div>
-                            
-                        </Collapse>
-                        
-                    </Row>
-                    {this.props.isLast ? "" : <hr/>}
+                </Row>
+                {this.props.isLast ? "" : <hr />}
             </div>
         )
     }

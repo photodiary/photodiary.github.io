@@ -93,6 +93,32 @@
                         {"fullSize":"s04p05.jpg", "thumbnail": "s04p05-t.jpg"},
                         {"fullSize":"s04p05.jpg", "thumbnail": "s04p05-t.jpg"}
                     ]
+                },
+                {
+                    "title": "Aneta&Artur",
+                    "id": 1,
+                    "thumbnail": "s04.jpg",
+                    "photos": [
+                        {"fullSize":"s04p01.jpg", "thumbnail": "s04p01-t.jpg"},
+                        {"fullSize":"s04p02.jpg", "thumbnail": "s04p02-t.jpg"},
+                        {"fullSize":"s04p03.jpg", "thumbnail": "s04p03-t.jpg"},
+                        {"fullSize":"s04p04.jpg", "thumbnail": "s04p04-t.jpg"},
+                        {"fullSize":"s04p05.jpg", "thumbnail": "s04p05-t.jpg"},
+                        {"fullSize":"s04p05.jpg", "thumbnail": "s04p05-t.jpg"}
+                    ]
+                },
+                {
+                    "title": "Aneta&Artur",
+                    "id": 2,
+                    "thumbnail": "s04.jpg",
+                    "photos": [
+                        {"fullSize":"s04p01.jpg", "thumbnail": "s04p01-t.jpg"},
+                        {"fullSize":"s04p02.jpg", "thumbnail": "s04p02-t.jpg"},
+                        {"fullSize":"s04p03.jpg", "thumbnail": "s04p03-t.jpg"},
+                        {"fullSize":"s04p04.jpg", "thumbnail": "s04p04-t.jpg"},
+                        {"fullSize":"s04p05.jpg", "thumbnail": "s04p05-t.jpg"},
+                        {"fullSize":"s04p05.jpg", "thumbnail": "s04p05-t.jpg"}
+                    ]
                 }
             ]
         }
