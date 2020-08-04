@@ -22,7 +22,7 @@ export default class Photoshoot extends React.Component {
       <div>
         <Header />
         <div id="content">
-          <h1>{photoshoot.title}</h1>
+          <h4>{photoshoot.title}</h4>
           <div className="photoColumn">
             {photoshoot.photos.map(photo => {
               // return <p></p>

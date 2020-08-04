@@ -64,7 +64,7 @@ export default class PhotoGallery extends React.Component {
             <div>
                 <Row>
                     <Col xs="12">
-                        <h1> {this.props.category}</h1>
+                        <h4> {this.props.category}</h4>
                     </Col>
                 </Row>
                 <Row>

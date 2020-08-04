@@ -19,7 +19,7 @@ export default class Contact extends React.Component {
       <hr/>
         <Row>
           <Col>
-            <h1>Kontakt</h1>
+            <h3>Kontakt</h3>
 
             <a href="mailto:anna.nogalska@interia.eu" className="a-link">
               <i class="icon fas fa-envelope" />
@@ -41,7 +41,7 @@ export default class Contact extends React.Component {
 
           </Col>
           <Col md="6" xs="12">
-            <h3>Napisz do mnie</h3>
+            <h4>Formularz kontaktowy</h4>
             <Form
               onSubmit={this.submitForm}
               action="https://formspree.io/xvowddrj"
