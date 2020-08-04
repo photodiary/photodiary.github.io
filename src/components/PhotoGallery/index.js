@@ -46,6 +46,8 @@ export default class PhotoGallery extends React.Component {
             slidesToScroll: 1,
             variableWidth: true,
             rows: 1,
+            // nextArrow: <NextArrow/>,
+            // prevArrow: <PrevArrow/>
           };
 
         const $ = window.$;

@@ -52,3 +52,7 @@ hr {
     width: auto;
     padding: 2px;
 }
+
+.slick-next::before, .slick-prev::before {
+    color: #A0A0A0;
+}
