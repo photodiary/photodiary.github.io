@@ -10,7 +10,7 @@ export default class PhotoGallery extends React.Component {
         super(props);
         this.state = {
             isOpen: false,
-            activePhotoshoot: 1
+            activePhotoshoot: 0
         }
     }
 
@@ -78,7 +78,6 @@ export default class PhotoGallery extends React.Component {
 
         
         if (photos){
-            console.log("trueee")
             return (
                 <Slider {...settings} className="parent-container">
                     {photos.map(photo =>
@@ -88,7 +87,7 @@ export default class PhotoGallery extends React.Component {
                     )}
                 </Slider>
             )
-        } else { console.log("fallse")}
+        }
     }
 
     render() {
