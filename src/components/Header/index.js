@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Fade } from 'react-slideshow-image';
+import { Collapse } from 'reactstrap';
 import './style.css';
 import 'react-slideshow-image/dist/styles.css'
 
 const Header = (props) => {
+    const [isOpen, setIsOpen] = useState(false);
+    const toggle = () => setIsOpen(!isOpen);
+
     const bgClasses = [
-        "bg1", "bg2", "bg3", "bg4", "bg5", "bg6", 
+        "bg1", "bg2", "bg3", "bg4", "bg5", "bg6",
         "bg7", "bg8", "bg9", "bg10", "bg11", "bg12"
     ]
 
@@ -44,7 +48,7 @@ const Header = (props) => {
 
 
     return (
-        <div className="slide-container">
+        <div className="slide-container" id="home">
             <div id="navbar-content" >
                 <Fade {...fadeProperties}>
                     {bgClasses.map(bgClass => {
@@ -69,16 +73,33 @@ const Header = (props) => {
                 </Fade>
                 <div id="header-end"></div>
             </div>
-            <div id="navbar-fixed">
-            
+            {/* {window.innerWidth > 600 ? */}
+                <div id="navbar-fixed">
+
                     <nav>
+                        <a href="#home"><i class="fas fa-home"></i></a>
                         <a href="#portfolio">PORTFOLIO</a>
                         <a href="#o-mnie">O MNIE</a>
                         <a href="#oferta">OFERTA</a>
                         <a href="#kontakt">KONTAKT</a>
                     </nav>
-                
-            </div>
+
+                </div>
+                {/* :
+                <div id="navbar-fixed-mobile">
+                    <div className="hamburger-menu" onClick={toggle}>
+                        <i class="fas fa-bars"></i>
+                    </div>
+
+                    <Collapse isOpen={isOpen}>
+                        <div className="menu-item"> <a href="#portfolio">PORTFOLIO</a></div>
+                        <div className="menu-item"> <a href="#o-mnie">O MNIE</a></div>
+                        <div className="menu-item"> <a href="#oferta">OFERTA</a></div>
+                        <div className="menu-item"> <a href="#kontakt">KONTAKT</a></div>
+                    </Collapse>
+
+                </div>
+            } */}
         </div>
     );
 

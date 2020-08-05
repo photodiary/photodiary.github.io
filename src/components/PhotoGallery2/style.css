@@ -35,8 +35,8 @@ hr {
     width:100%;
     color:#fff;
     font-size: 1.25rem;
-    font-family: 'Lato';
-    text-transform: uppercase;
+    font-family:'Cinzel', sans-serif;
+    /* text-transform: uppercase; */
     z-index:1;
     text-align:center;
     top: 60%;

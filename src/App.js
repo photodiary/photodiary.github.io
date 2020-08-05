@@ -18,7 +18,7 @@ function App() {
         <Home />
         <About />
         <Contact />
-        <Instafeed />
+        {/* <Instafeed /> */}
         <Footer />
       </HashRouter>
     </div>

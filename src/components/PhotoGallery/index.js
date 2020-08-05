@@ -46,23 +46,15 @@ export default class PhotoGallery extends React.Component {
             slidesToScroll: 1,
             variableWidth: true,
             rows: 1,
-            // nextArrow: <NextArrow/>,
-            // prevArrow: <PrevArrow/>
         };
 
-        // const ps = this.props.photoshoots[this.state.activePhotoshoot];
 
         const ps = this.props.photoshoots.find(photoshoot => { 
             return(photoshoot.id === this.state.activePhotoshoot)
         })
 
-        console.log("active");
-        console.log(this.state.activePhotoshoot)
-        console.log("ps")
-        console.log(ps)
         var photos = '';
         photos = (ps ? ps.photos : photos)
-        console.log(photos)
 
         const $ = window.$;
         $(document).ready(function () {
@@ -118,12 +110,6 @@ export default class PhotoGallery extends React.Component {
                         <br />
                         <div>
                             {this.getPhotoshoot()}
-                            {/* {this.props.photoshoots.map(
-                                ps => {
-                                    // if (ps.id === this.state.activePhotoshoot) return (
-                                    this.getPhotoshoot(ps.id);
-                                }
-                            )} */}
                         </div>
 
                     </Collapse>

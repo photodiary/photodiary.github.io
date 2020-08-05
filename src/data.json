@@ -74,6 +74,18 @@
                         {"fullSize":"s06p04.jpg", "thumbnail": "s06p04-t.jpg"},
                         {"fullSize":"s06p05.jpg", "thumbnail": "s06p05-t.jpg"}
                     ]
+                },
+                {
+                    "title": "Ilona",
+                    "id": 5,
+                    "thumbnail": "s08.jpg",
+                    "photos": [
+                        {"fullSize":"s08p01.jpg", "thumbnail": "s08p01-t.jpg"},
+                        {"fullSize":"s08p02.jpg", "thumbnail": "s08p02-t.jpg"},
+                        {"fullSize":"s08p03.jpg", "thumbnail": "s08p03-t.jpg"},
+                        {"fullSize":"s08p04.jpg", "thumbnail": "s08p04-t.jpg"},
+                        {"fullSize":"s08p05.jpg", "thumbnail": "s08p05-t.jpg"}
+                    ]
                 }
             ]
         },
@@ -90,14 +102,13 @@
                         {"fullSize":"s04p02.jpg", "thumbnail": "s04p02-t.jpg"},
                         {"fullSize":"s04p03.jpg", "thumbnail": "s04p03-t.jpg"},
                         {"fullSize":"s04p04.jpg", "thumbnail": "s04p04-t.jpg"},
-                        {"fullSize":"s04p05.jpg", "thumbnail": "s04p05-t.jpg"},
                         {"fullSize":"s04p05.jpg", "thumbnail": "s04p05-t.jpg"}
                     ]
                 },
                 {
-                    "title": "Aneta&Artur",
+                    "title": "Marieta&Piotrek",
                     "id": 1,
-                    "thumbnail": "s04.jpg",
+                    "thumbnail": "s07.jpg",
                     "photos": [
                         {"fullSize":"s07p01.jpg", "thumbnail": "s07p01-t.jpg"},
                         {"fullSize":"s07p02.jpg", "thumbnail": "s07p02-t.jpg"},
