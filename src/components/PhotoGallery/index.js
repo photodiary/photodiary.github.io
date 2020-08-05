@@ -131,7 +131,7 @@ export default class PhotoGallery extends React.Component {
                     <Row>
                         {this.state.secondaryPhotoshoots.map((photoshoot, index) => {
                             return (
-                                <Col xs="12" md="" style={{ padding: "4px", maxWidth: "20%" }} className="parent-container">
+                                <Col xs="12" md="" style={{ padding: "4px" }} className="parent-container secondary-content">
                                     <div className="overlay" data-content={photoshoot.title}
                                         onClick={() => this.toggle(photoshoot.id)}>
                                         <img

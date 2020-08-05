@@ -56,3 +56,9 @@ hr {
 .slick-next::before, .slick-prev::before {
     color: #A0A0A0;
 }
+
+@media all and (min-width: 768px) {
+    .secondary-content {
+        max-width: 20%;
+    }
+}
