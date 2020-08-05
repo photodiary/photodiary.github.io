@@ -6,7 +6,7 @@ const Offer = (props) => {
   return (
     <div>
       <Header />
-      <div id="content">
+      <div className="content" id="oferta">
         Offer
       </div>
     </div>
