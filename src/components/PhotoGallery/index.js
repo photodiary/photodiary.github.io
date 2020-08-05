@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Collapse } from 'reactstrap';
+import { Row, Col, Collapse, Button } from 'reactstrap';
 import Slider from 'react-slick';
 // import "~slick-carousel/slick/slick.css"; 
 // import "~slick-carousel/slick/slick-theme.css";
@@ -10,8 +10,14 @@ export default class PhotoGallery extends React.Component {
         super(props);
         this.state = {
             isOpen: false,
-            activePhotoshoot: 0
+            activePhotoshoot: 0,
+            primaryPhotoshoots: this.props.photoshoots.slice(0, this.props.photoshoots.length > 5 ? 5 : this.props.photoshoots.length),
+            secondaryPhotoshoots: this.props.photoshoots.length > 5 ? this.props.photoshoots.slice(5, this.props.photoshoots.length) : [],
+            isMoreThan5: this.props.photoshoots.length > 5 ? true : false,
+            isMoreOpen: false
         }
+        console.log(this.state.primaryPhotoshoots)
+        console.log(this.state.secondaryPhotoshoots)
     }
 
     open = (e) => {
@@ -49,8 +55,8 @@ export default class PhotoGallery extends React.Component {
         };
 
 
-        const ps = this.props.photoshoots.find(photoshoot => { 
-            return(photoshoot.id === this.state.activePhotoshoot)
+        const ps = this.props.photoshoots.find(photoshoot => {
+            return (photoshoot.id === this.state.activePhotoshoot)
         })
 
         var photos = '';
@@ -68,8 +74,8 @@ export default class PhotoGallery extends React.Component {
 
         });
 
-        
-        if (photos){
+
+        if (photos) {
             return (
                 <Slider {...settings} className="parent-container">
                     {photos.map(photo =>
@@ -82,6 +88,10 @@ export default class PhotoGallery extends React.Component {
         }
     }
 
+    showMore = () => {
+        this.setState({ isMoreOpen: true });
+    }
+
     render() {
         return (
             <div>
@@ -91,7 +101,7 @@ export default class PhotoGallery extends React.Component {
                     </Col>
                 </Row>
                 <Row>
-                    {this.props.photoshoots.map((photoshoot, index) => {
+                    {this.state.primaryPhotoshoots.map((photoshoot, index) => {
                         return (
                             <Col xs="12" md="" style={{ padding: "4px" }} className="parent-container">
                                 <div className="overlay" data-content={photoshoot.title}
@@ -105,6 +115,37 @@ export default class PhotoGallery extends React.Component {
                         )
                     })}
                 </Row>
+
+
+                {this.state.isMoreThan5 ?
+                    <Row>
+                        <Col xs="12" style={{padding: "0"}}>
+                            <Collapse isOpen={!this.state.isMoreOpen} style={{ float: "right" }}>
+                                <Button style={{ float: "right", marginRight: "4px"}} onClick={() => this.showMore()}>Więcej...</Button>
+                            </Collapse>
+                        </Col>
+                    </Row>
+                    : ""}
+
+                <Collapse isOpen={this.state.isMoreOpen}>
+                    <Row>
+                        {this.state.secondaryPhotoshoots.map((photoshoot, index) => {
+                            return (
+                                <Col xs="12" md="" style={{ padding: "4px", maxWidth: "20%" }} className="parent-container">
+                                    <div className="overlay" data-content={photoshoot.title}
+                                        onClick={() => this.toggle(photoshoot.id)}>
+                                        <img
+                                            className="thumbnail"
+                                            src={require("../../assets/photos/" + photoshoot.thumbnail)}
+                                        />
+                                    </div>
+                                </Col>
+                            )
+                        })}
+                    </Row>
+
+
+                </Collapse>
                 <Row xs="12">
                     <Collapse isOpen={this.state.isOpen} style={{ width: "100%" }}>
                         <br />
