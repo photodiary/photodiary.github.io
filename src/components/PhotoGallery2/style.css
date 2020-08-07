@@ -13,6 +13,7 @@ hr {
     position:relative;
     max-width: 300px;
     /* height:200px; */
+    cursor: pointer;
 }
 .overlay img {
     width:100%;

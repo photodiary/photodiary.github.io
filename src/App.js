@@ -8,7 +8,6 @@ import Header from './components/Header';
 import Instafeed from './components/Instafeed';
 import Footer from './components/Footer';
 import './App.css';
-import Photoshoot from './containers/Photoshoot';
 
 function App() {
   return (
