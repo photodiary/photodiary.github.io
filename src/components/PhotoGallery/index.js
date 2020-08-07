@@ -16,8 +16,6 @@ export default class PhotoGallery extends React.Component {
             isMoreThan5: this.props.photoshoots.length > 5 ? true : false,
             isMoreOpen: false
         }
-        console.log(this.state.primaryPhotoshoots)
-        console.log(this.state.secondaryPhotoshoots)
     }
 
     open = (e) => {
@@ -29,15 +27,21 @@ export default class PhotoGallery extends React.Component {
     }
 
     toggle = (id) => {
+        const $ = window.$;
         if (this.state.isOpen) {
             if (this.state.activePhotoshoot === id) {
                 this.close();
             } else {
                 this.setState({ activePhotoshoot: id });
+                var slides = document.getElementsByClassName("slides")[this.props.catId];
+                slides.scrollIntoView(true);
             }
         } else {
             this.setState({ activePhotoshoot: id });
             this.open();
+
+            var slides = document.getElementsByClassName("slides")[this.props.catId];
+            slides.scrollIntoView(true);
 
         }
     }
@@ -119,9 +123,9 @@ export default class PhotoGallery extends React.Component {
 
                 {this.state.isMoreThan5 ?
                     <Row>
-                        <Col xs="12" style={{padding: "0"}}>
+                        <Col xs="12" style={{ padding: "0" }}>
                             <Collapse isOpen={!this.state.isMoreOpen} style={{ float: "right" }}>
-                                <Button style={{ float: "right", marginRight: "4px"}} onClick={() => this.showMore()}>Więcej...</Button>
+                                <Button style={{ float: "right", marginRight: "4px" }} onClick={() => this.showMore()}>Więcej...</Button>
                             </Collapse>
                         </Col>
                     </Row>
@@ -144,8 +148,11 @@ export default class PhotoGallery extends React.Component {
                         })}
                     </Row>
 
-
                 </Collapse>
+
+                <div id="slidesContainer">
+                    <div className="slides"></div>
+                </div>
                 <Row xs="12">
                     <Collapse isOpen={this.state.isOpen} style={{ width: "100%" }}>
                         <br />

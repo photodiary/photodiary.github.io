@@ -98,6 +98,20 @@
                         {"fullSize":"s09p04.jpg", "thumbnail": "s09p04-t.jpg"},
                         {"fullSize":"s09p05.jpg", "thumbnail": "s09p05-t.jpg"}
                     ]
+                },
+                {
+                    "title": "Natalia&Wiktoria",
+                    "id": 7,
+                    "thumbnail": "s10.jpg",
+                    "photos": [
+                        {"fullSize":"s10p01.jpg", "thumbnail": "s10p01-t.jpg"},
+                        {"fullSize":"s10p02.jpg", "thumbnail": "s10p02-t.jpg"},
+                        {"fullSize":"s10p03.jpg", "thumbnail": "s10p03-t.jpg"},
+                        {"fullSize":"s10p04.jpg", "thumbnail": "s10p04-t.jpg"},
+                        {"fullSize":"s10p05.jpg", "thumbnail": "s10p05-t.jpg"},
+                        {"fullSize":"s10p06.jpg", "thumbnail": "s10p06-t.jpg"},
+                        {"fullSize":"s10p07.jpg", "thumbnail": "s10p07-t.jpg"}
+                    ]
                 }
             ]
         },
@@ -132,16 +146,17 @@
                     ]
                 },
                 {
-                    "title": "Aneta&Artur",
+                    "title": "Andżelika&Szymon",
                     "id": 2,
-                    "thumbnail": "s04.jpg",
+                    "thumbnail": "s11.jpg",
                     "photos": [
-                        {"fullSize":"s04p01.jpg", "thumbnail": "s04p01-t.jpg"},
-                        {"fullSize":"s04p02.jpg", "thumbnail": "s04p02-t.jpg"},
-                        {"fullSize":"s04p03.jpg", "thumbnail": "s04p03-t.jpg"},
-                        {"fullSize":"s04p04.jpg", "thumbnail": "s04p04-t.jpg"},
-                        {"fullSize":"s04p05.jpg", "thumbnail": "s04p05-t.jpg"},
-                        {"fullSize":"s04p05.jpg", "thumbnail": "s04p05-t.jpg"}
+                        {"fullSize":"s11p01.jpg", "thumbnail": "s11p01-t.jpg"},
+                        {"fullSize":"s11p02.jpg", "thumbnail": "s11p02-t.jpg"},
+                        {"fullSize":"s11p03.jpg", "thumbnail": "s11p03-t.jpg"},
+                        {"fullSize":"s11p04.jpg", "thumbnail": "s11p04-t.jpg"},
+                        {"fullSize":"s11p05.jpg", "thumbnail": "s11p05-t.jpg"},
+                        {"fullSize":"s11p06.jpg", "thumbnail": "s11p06-t.jpg"},
+                        {"fullSize":"s11p07.jpg", "thumbnail": "s11p07-t.jpg"}
                     ]
                 }
             ]
