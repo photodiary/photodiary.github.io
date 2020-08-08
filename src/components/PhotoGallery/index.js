@@ -66,9 +66,11 @@ export default class PhotoGallery extends React.Component {
         var photos = '';
         photos = (ps ? ps.photos : photos)
 
+        var parent = '.parent-container' + this.props.catId;
+
         const $ = window.$;
         $(document).ready(function () {
-            $('.parent-container').magnificPopup({
+            $(parent).magnificPopup({
                 delegate: 'a', // child items selector, by clicking on it popup will open
                 type: 'image',
                 gallery: {
@@ -81,7 +83,7 @@ export default class PhotoGallery extends React.Component {
 
         if (photos) {
             return (
-                <Slider {...settings} className="parent-container">
+                <Slider {...settings} className={"parent-container" + this.props.catId}>
                     {photos.map(photo =>
                         <a href={require("../../assets/photos/" + photo.fullSize)}>
                             <img class="photo" src={require("../../assets/photos/" + photo.thumbnail)} />
