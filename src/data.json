@@ -100,17 +100,17 @@
                     ]
                 },
                 {
-                    "title": "Natalia&Wiktoria",
+                    "title": "Maria",
                     "id": 7,
-                    "thumbnail": "s10.jpg",
+                    "thumbnail": "s12.jpg",
                     "photos": [
-                        {"fullSize":"s10p01.jpg", "thumbnail": "s10p01-t.jpg"},
-                        {"fullSize":"s10p02.jpg", "thumbnail": "s10p02-t.jpg"},
-                        {"fullSize":"s10p03.jpg", "thumbnail": "s10p03-t.jpg"},
-                        {"fullSize":"s10p04.jpg", "thumbnail": "s10p04-t.jpg"},
-                        {"fullSize":"s10p05.jpg", "thumbnail": "s10p05-t.jpg"},
-                        {"fullSize":"s10p06.jpg", "thumbnail": "s10p06-t.jpg"},
-                        {"fullSize":"s10p07.jpg", "thumbnail": "s10p07-t.jpg"}
+                        {"fullSize":"s12p01.jpg", "thumbnail": "s12p01-t.jpg"},
+                        {"fullSize":"s12p02.jpg", "thumbnail": "s12p02-t.jpg"},
+                        {"fullSize":"s12p03.jpg", "thumbnail": "s12p03-t.jpg"},
+                        {"fullSize":"s12p04.jpg", "thumbnail": "s12p04-t.jpg"},
+                        {"fullSize":"s12p05.jpg", "thumbnail": "s12p05-t.jpg"},
+                        {"fullSize":"s12p06.jpg", "thumbnail": "s12p06-t.jpg"},
+                        {"fullSize":"s12p07.jpg", "thumbnail": "s12p07-t.jpg"}
                     ]
                 }
             ]
@@ -157,6 +157,26 @@
                         {"fullSize":"s11p05.jpg", "thumbnail": "s11p05-t.jpg"},
                         {"fullSize":"s11p06.jpg", "thumbnail": "s11p06-t.jpg"},
                         {"fullSize":"s11p07.jpg", "thumbnail": "s11p07-t.jpg"}
+                    ]
+                }
+            ]
+        },
+        {
+            "categoryId": 2,
+            "categoryName": "Sesje rodzinne",
+            "photoshoots": [
+                {
+                    "title": "Natalia&Wiktoria",
+                    "id": 0,
+                    "thumbnail": "s10.jpg",
+                    "photos": [
+                        {"fullSize":"s10p01.jpg", "thumbnail": "s10p01-t.jpg"},
+                        {"fullSize":"s10p02.jpg", "thumbnail": "s10p02-t.jpg"},
+                        {"fullSize":"s10p03.jpg", "thumbnail": "s10p03-t.jpg"},
+                        {"fullSize":"s10p04.jpg", "thumbnail": "s10p04-t.jpg"},
+                        {"fullSize":"s10p05.jpg", "thumbnail": "s10p05-t.jpg"},
+                        {"fullSize":"s10p06.jpg", "thumbnail": "s10p06-t.jpg"},
+                        {"fullSize":"s10p07.jpg", "thumbnail": "s10p07-t.jpg"}
                     ]
                 }
             ]
