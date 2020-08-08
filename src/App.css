@@ -6,10 +6,16 @@ body {
 
 .content {
   margin: 0 12vw;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
 }
 
 @font-face {
   font-family: 'Tagger';
   src:  url('./assets/Tagger-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'BlackSignature';
+  src: url("./assets/BlackSingature.ttf")  format("truetype");
 }
