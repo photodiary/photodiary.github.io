@@ -3,7 +3,23 @@
         {
             "categoryId": 0,
             "categoryName": "Sesje indywidualne",
-            "photoshoots": [               
+            "photoshoots": [  
+                {
+                    "title": "Dagmara",
+                    "id": 8,
+                    "thumbnail": "s13.jpg",
+                    "photos": [
+                        {"fullSize":"s13p01.jpg", "thumbnail": "s13p01-t.jpg"},
+                        {"fullSize":"s13p02.jpg", "thumbnail": "s13p02-t.jpg"},
+                        {"fullSize":"s13p03.jpg", "thumbnail": "s13p03-t.jpg"},
+                        {"fullSize":"s13p04.jpg", "thumbnail": "s13p04-t.jpg"},
+                        {"fullSize":"s13p05.jpg", "thumbnail": "s13p05-t.jpg"},
+                        {"fullSize":"s13p06.jpg", "thumbnail": "s13p06-t.jpg"},
+                        {"fullSize":"s13p07.jpg", "thumbnail": "s13p07-t.jpg"},
+                        {"fullSize":"s13p08.jpg", "thumbnail": "s13p08-t.jpg"},
+                        {"fullSize":"s13p09.jpg", "thumbnail": "s13p09-t.jpg"}
+                    ]
+                },             
                 {
                     "title": "Maria",
                     "id": 7,
