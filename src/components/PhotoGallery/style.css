@@ -23,6 +23,7 @@ hr {
     opacity:0;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
+    cursor: pointer;
 }
 .overlay:after {
     content:'\A';

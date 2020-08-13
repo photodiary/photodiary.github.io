@@ -34,14 +34,14 @@ export default class PhotoGallery extends React.Component {
             } else {
                 this.setState({ activePhotoshoot: id });
                 var slides = document.getElementsByClassName("slides")[this.props.catId];
-                slides.scrollIntoView(true);
+                window.scrollTo(0, slides.offsetTop - 50)
             }
         } else {
             this.setState({ activePhotoshoot: id });
             this.open();
 
             var slides = document.getElementsByClassName("slides")[this.props.catId];
-            slides.scrollIntoView(true);
+            window.scrollTo(0, slides.offsetTop - 50);
 
         }
     }
