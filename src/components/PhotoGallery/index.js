@@ -34,7 +34,6 @@ export default class PhotoGallery extends React.Component {
             } else {
                 this.setState({ activePhotoshoot: id });
                 var slides = document.getElementsByClassName("slides")[this.props.catId];
-                slides.scrollTop -= 50;
                 slides.scrollIntoView(true);
             }
         } else {
@@ -42,7 +41,6 @@ export default class PhotoGallery extends React.Component {
             this.open();
 
             var slides = document.getElementsByClassName("slides")[this.props.catId];
-            slides.scrollTop -= 50;
             slides.scrollIntoView(true);
 
         }
@@ -158,7 +156,7 @@ export default class PhotoGallery extends React.Component {
                     <div className="slides"></div>
                 </div>
                 <Row xs="12">
-                    <Collapse isOpen={this.state.isOpen} style={{ width: "100%" }}>
+                    <Collapse isOpen={this.state.isOpen} style={{ width: "100%", scrollTop: "-50px" }}>
                         <br />
                         <div>
                             {this.getPhotoshoot()}
