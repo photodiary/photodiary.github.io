@@ -5,6 +5,21 @@
             "categoryName": "Sesje indywidualne",
             "photoshoots": [  
                 {
+                    "title": "Dorota",
+                    "id": 9,
+                    "thumbnail": "s14.jpg",
+                    "photos": [
+                        {"fullSize":"s14p01.jpg", "thumbnail": "s14p01-t.jpg"},
+                        {"fullSize":"s14p02.jpg", "thumbnail": "s14p02-t.jpg"},
+                        {"fullSize":"s14p03.jpg", "thumbnail": "s14p03-t.jpg"},
+                        {"fullSize":"s14p04.jpg", "thumbnail": "s14p04-t.jpg"},
+                        {"fullSize":"s14p05.jpg", "thumbnail": "s14p05-t.jpg"},
+                        {"fullSize":"s14p06.jpg", "thumbnail": "s14p06-t.jpg"},
+                        {"fullSize":"s14p07.jpg", "thumbnail": "s14p07-t.jpg"},
+                        {"fullSize":"s14p08.jpg", "thumbnail": "s14p08-t.jpg"}
+                    ]
+                },
+                {
                     "title": "Dagmara",
                     "id": 8,
                     "thumbnail": "s13.jpg",
@@ -135,6 +150,18 @@
             "categoryId": 1,
             "categoryName": "Sesje par",
             "photoshoots": [
+                {
+                    "title": "Zuza&Adam",
+                    "id": 3,
+                    "thumbnail": "s15.jpg",
+                    "photos": [
+                        {"fullSize":"s15p01.jpg", "thumbnail": "s15p01-t.jpg"},
+                        {"fullSize":"s15p02.jpg", "thumbnail": "s15p02-t.jpg"},
+                        {"fullSize":"s15p03.jpg", "thumbnail": "s15p03-t.jpg"},
+                        {"fullSize":"s15p04.jpg", "thumbnail": "s15p04-t.jpg"},
+                        {"fullSize":"s15p05.jpg", "thumbnail": "s15p05-t.jpg"}
+                    ]
+                },
                 {
                     "title": "Andżelika&Szymon",
                     "id": 2,
