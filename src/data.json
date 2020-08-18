@@ -5,6 +5,30 @@
             "categoryName": "Sesje indywidualne",
             "photoshoots": [  
                 {
+                    "title": "Paula",
+                    "id": 11,
+                    "thumbnail": "s17.jpg",
+                    "photos": [
+                        {"fullSize":"s17p01.jpg", "thumbnail": "s17p01-t.jpg"},
+                        {"fullSize":"s17p02.jpg", "thumbnail": "s17p02-t.jpg"},
+                        {"fullSize":"s17p03.jpg", "thumbnail": "s17p03-t.jpg"},
+                        {"fullSize":"s17p04.jpg", "thumbnail": "s17p04-t.jpg"},
+                        {"fullSize":"s17p05.jpg", "thumbnail": "s17p05-t.jpg"}
+                    ]
+                },
+                {
+                    "title": "Zuza",
+                    "id": 10,
+                    "thumbnail": "s16.jpg",
+                    "photos": [
+                        {"fullSize":"s16p01.jpg", "thumbnail": "s16p01-t.jpg"},
+                        {"fullSize":"s16p02.jpg", "thumbnail": "s16p02-t.jpg"},
+                        {"fullSize":"s16p03.jpg", "thumbnail": "s16p03-t.jpg"},
+                        {"fullSize":"s16p04.jpg", "thumbnail": "s16p04-t.jpg"},
+                        {"fullSize":"s16p05.jpg", "thumbnail": "s16p05-t.jpg"}
+                    ]
+                },
+                {
                     "title": "Dorota",
                     "id": 9,
                     "thumbnail": "s14.jpg",
