@@ -61,5 +61,6 @@ hr {
 @media all and (min-width: 768px) {
     .secondary-content {
         max-width: 20%;
+        min-width: 20%;
     }
 }
