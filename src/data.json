@@ -5,6 +5,39 @@
             "categoryName": "Sesje indywidualne",
             "photoshoots": [  
                 {
+                    "title": "Marta",
+                    "id": 14,
+                    "thumbnail": "s20.jpg",
+                    "photos": [
+                        {"fullSize":"s20p01.jpg", "thumbnail": "s20p01-t.jpg"},
+                        {"fullSize":"s20p02.jpg", "thumbnail": "s20p02-t.jpg"},
+                        {"fullSize":"s20p03.jpg", "thumbnail": "s20p03-t.jpg"},
+                        {"fullSize":"s20p04.jpg", "thumbnail": "s20p04-t.jpg"}
+                    ]
+                },
+                {
+                    "title": "Anita",
+                    "id": 13,
+                    "thumbnail": "s21.jpg",
+                    "photos": [
+                        {"fullSize":"s21p01.jpg", "thumbnail": "s21p01-t.jpg"},
+                        {"fullSize":"s21p02.jpg", "thumbnail": "s21p02-t.jpg"},
+                        {"fullSize":"s21p03.jpg", "thumbnail": "s21p03-t.jpg"},
+                        {"fullSize":"s21p04.jpg", "thumbnail": "s21p04-t.jpg"}
+                    ]
+                },
+                {
+                    "title": "Magda",
+                    "id": 12,
+                    "thumbnail": "s18.jpg",
+                    "photos": [
+                        {"fullSize":"s18p01.jpg", "thumbnail": "s18p01-t.jpg"},
+                        {"fullSize":"s18p02.jpg", "thumbnail": "s18p02-t.jpg"},
+                        {"fullSize":"s18p03.jpg", "thumbnail": "s18p03-t.jpg"},
+                        {"fullSize":"s18p04.jpg", "thumbnail": "s18p04-t.jpg"}
+                    ]
+                },
+                {
                     "title": "Paula",
                     "id": 11,
                     "thumbnail": "s17.jpg",
