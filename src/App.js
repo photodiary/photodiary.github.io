@@ -16,7 +16,7 @@ function App() {
         <Header />
         <Home />
         <About />
-        <Offer/>
+        {/* <Offer/> */}
         <Contact />
         {/* <Instafeed /> */}
         <Footer />

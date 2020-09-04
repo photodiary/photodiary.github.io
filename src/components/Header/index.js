@@ -63,7 +63,7 @@ const Header = (props) => {
                                     <div id="menu">
                                         <a href="#portfolio">PORTFOLIO</a>
                                         <a href="#o-mnie">O MNIE</a>
-                                        <a href="#oferta">OFERTA</a>
+                                        {/* <a href="#oferta">OFERTA</a> */}
                                         <a href="#kontakt">KONTAKT</a>
                                     </div>
                                 </nav>
@@ -80,7 +80,7 @@ const Header = (props) => {
                         <a href="#home"><i class="fas fa-home"></i></a>
                         <a href="#portfolio">PORTFOLIO</a>
                         <a href="#o-mnie">O MNIE</a>
-                        <a href="#oferta">OFERTA</a>
+                        {/* <a href="#oferta">OFERTA</a> */}
                         <a href="#kontakt">KONTAKT</a>
                     </nav>
 
