@@ -4,7 +4,7 @@ import './style.css';
 
 const Footer = (props) => {
     return (
-        <footer>COPYRIGHT © 2020 ANNA NOGALSKA | WEBSITE BY @AGSTA</footer>
+        <footer>COPYRIGHT © 2020 ANNA NOGALSKA | WEBSITE BY <a href="https://github.com/agsta">@AGSTA</a></footer>
     );
 
 }
