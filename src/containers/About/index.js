@@ -7,7 +7,7 @@ import './style.css';
 const About = (props) => {
     return (
         <div id="o-mnie" className="content" style={{ paddingTop: "10px" }}>
-            <hr />
+            <br />
             <Row>
                 <Col xs="12">
                     <h3>O mnie</h3>

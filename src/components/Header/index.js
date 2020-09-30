@@ -1,13 +1,20 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Fade } from 'react-slideshow-image';
-import { Collapse } from 'reactstrap';
+import { Collapse, Dropdown, DropdownMenu, DropdownToggle, DropdownItem } from 'reactstrap';
 import './style.css';
 import 'react-slideshow-image/dist/styles.css'
 
 const Header = (props) => {
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen);
+
+    const [isDropdownOpen, setDropdownOpen] = useState(false);
+    const toggleDropdown = () => setDropdownOpen(prevState => !prevState);
+
+    const [isDropdown2Open, setDropdown2Open] = useState(false);
+    const toggleDropdown2 = () => setDropdown2Open(prevState => !prevState);
+
 
     const bgClasses = [
         "bg1", "bg2", "bg3", "bg4", "bg5", "bg6",
@@ -23,7 +30,7 @@ const Header = (props) => {
 
     const $ = window.$;
     $(document).ready(function () {
-        $("#navbar-fixed").hide(); //Hide the navigation bar first
+        if (!isScrolledAfterElement("#header-end")) $("#navbar-fixed").hide(); //Hide the navigation bar first
         $(window).scroll(function () {  //Listen for the window's scroll event
             if (isScrolledAfterElement("#header-end")) {
                 $('#navbar-fixed').fadeIn();
@@ -45,8 +52,6 @@ const Header = (props) => {
     });
 
 
-
-
     return (
         <div className="slide-container" id="home">
             <div id="navbar-content" >
@@ -61,9 +66,19 @@ const Header = (props) => {
                                         <img id="logo" src={require("../../assets/images/logo.png")} alt="logo" />
                                     </a>
                                     <div id="menu">
-                                        <a href="#portfolio">PORTFOLIO</a>
+                                        <Dropdown isOpen={isDropdownOpen} toggle={toggleDropdown}>
+                                            <DropdownToggle caret> PORTFOLIO </DropdownToggle>
+                                            <DropdownMenu>
+                                                <DropdownItem><a href="#/portfolio/1">FOTOGRAFIA PORTRETOWA</a></DropdownItem>
+                                                <DropdownItem divider />
+                                                <DropdownItem><a href="#/portfolio/2">FOTOGRAFIA PAR</a></DropdownItem>
+                                                <DropdownItem divider />
+                                                <DropdownItem><a href="#/portfolio/3">FOTOGRAFIA RODZINNA</a></DropdownItem>
+                                                <DropdownItem divider />
+                                                <DropdownItem><a href="#/portfolio/4">FOTOGRAFIA KULINARNA</a></DropdownItem>
+                                            </DropdownMenu>
+                                        </Dropdown>
                                         <a href="#o-mnie">O MNIE</a>
-                                        {/* <a href="#oferta">OFERTA</a> */}
                                         <a href="#kontakt">KONTAKT</a>
                                     </div>
                                 </nav>
@@ -74,18 +89,27 @@ const Header = (props) => {
                 <div id="header-end"></div>
             </div>
             {/* {window.innerWidth > 600 ? */}
-                <div id="navbar-fixed">
+            <div id="navbar-fixed">
 
-                    <nav>
-                        <a href="#home"><i class="fas fa-home"></i></a>
-                        <a href="#portfolio">PORTFOLIO</a>
-                        <a href="#o-mnie">O MNIE</a>
-                        {/* <a href="#oferta">OFERTA</a> */}
-                        <a href="#kontakt">KONTAKT</a>
-                    </nav>
-
-                </div>
-                {/* :
+                <nav className="secondary-nav">
+                    <a href="#home"><i class="fas fa-home"></i></a>
+                    <Dropdown isOpen={isDropdown2Open} toggle={toggleDropdown2}>
+                        <DropdownToggle caret> PORTFOLIO </DropdownToggle>
+                        <DropdownMenu>
+                            <DropdownItem><a href="#portfolio/1">FOTOGRAFIA PORTRETOWA</a></DropdownItem>
+                            <DropdownItem divider />
+                            <DropdownItem><a href="#portfolio/2">FOTOGRAFIA PAR</a></DropdownItem>
+                            <DropdownItem divider />
+                            <DropdownItem><a href="#portfolio/3">FOTOGRAFIA RODZINNA</a></DropdownItem>
+                            <DropdownItem divider />
+                            <DropdownItem><a href="#portfolio/4">FOTOGRAFIA KULINARNA</a></DropdownItem>
+                        </DropdownMenu>
+                    </Dropdown>
+                    <a href="#o-mnie">O MNIE</a>
+                    <a href="#kontakt">KONTAKT</a>
+                </nav>
+            </div>
+            {/* :
                 <div id="navbar-fixed-mobile">
                     <div className="hamburger-menu" onClick={toggle}>
                         <i class="fas fa-bars"></i>

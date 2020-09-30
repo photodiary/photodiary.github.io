@@ -101,12 +101,34 @@
     text-align: center;
 }
 
-nav a {
+.dropdown {
+    display: inline-block;
+}
+
+nav a, .dropdown-toggle, .dropdown-toggle:focus, .dropdown-item {
     font-family: 'Cinzel', sans-serif;
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 10px !important;
+    padding: 0 !important;
     color: white;
     text-decoration: none;
+    background-color: rgba(0, 0, 0, 0) !important;
+    font-size: 16px !important;
+    border: none;
+    box-shadow: none !important;
+}
+
+.dropdown-menu {
+    background-color: rgba(0, 0, 0, .15);
+}
+
+.secondary-nav .dropdown-menu {
+    background-color: var(--navbar-color);
+    margin-top: 0.75rem;
+}
+
+.dropdown-item:hover, .dropdown-toggle:hover {
+    color: rgb(202, 202, 202)
 }
 
 nav a:hover {
