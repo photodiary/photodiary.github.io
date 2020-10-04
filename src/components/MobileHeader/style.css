@@ -1,0 +1,129 @@
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-2%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes shrink {
+    0% {
+        width: 95%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+.main-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+    background: var(--menu-color);
+    width: 100%;
+    height: 10vh;
+    color: white;
+}
+
+.logo {
+    margin: 0 auto;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    margin-left: -30vw;
+    height: 10vh;
+    width:60vw;
+}
+
+.logo-image {
+    width: 60vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container2 {
+    opacity: 0;
+    animation: 1s appear forwards;
+}
+
+.menu-item {
+    font-family: 'Cinzel', sans-serif;
+    font-size: 1.3rem;
+    padding: 1rem 0;
+    /* margin: 0 5%; */
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+    animation: 0.5s slideIn forwards;
+}
+
+.line {
+    width: 90%;
+    height: 1px;
+    background: white;
+    margin: 0 auto;
+    animation: 0.5s shrink forwards;
+}
+
+.container3 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background: var(--menu-color);
+    opacity: 0.95;
+    color: #fafafa;
+    transition: height 0.3s ease;
+    z-index: 2
+}
+
+.menu-list {
+    padding-top:  5rem;
+}
+
+.button-container {
+    height: 32px;
+    width: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 4px;
+    margin: 8px 16px;
+}
+
+
+.line-basic {
+    height: 2px;
+    width: 20px;
+    transition: all 0.2s ease;
+}
+
+.line-top {
+    transform-origin: top left;
+    margin-bottom: 5px;
+}
+
+.line-bottom {
+    transform-origin: top left;
+    margin-top: 5px;
+}

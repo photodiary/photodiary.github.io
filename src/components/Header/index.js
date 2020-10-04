@@ -4,6 +4,7 @@ import { Fade } from 'react-slideshow-image';
 import { Collapse, Dropdown, DropdownMenu, DropdownToggle, DropdownItem } from 'reactstrap';
 import './style.css';
 import 'react-slideshow-image/dist/styles.css'
+import MobileHeader from '../MobileHeader'
 
 const Header = (props) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -62,9 +63,9 @@ const Header = (props) => {
                                 className={"each-fade bg-image " + bgClass}
                             >
                                 <nav id="navbar">
-                                    <a href="/" id="homeLink">
+                                {window.innerWidth > 600 ? <a href="/" id="homeLink">
                                         <img id="logo" src={require("../../assets/images/logo.png")} alt="logo" />
-                                    </a>
+                                    </a> : ''}
                                     <div id="menu">
                                         <Dropdown isOpen={isDropdownOpen} toggle={toggleDropdown}>
                                             <DropdownToggle caret> PORTFOLIO </DropdownToggle>
@@ -88,7 +89,7 @@ const Header = (props) => {
                 </Fade>
                 <div id="header-end"></div>
             </div>
-            {/* {window.innerWidth > 600 ? */}
+            {window.innerWidth > 600 ?
             <div id="navbar-fixed">
 
                 <nav className="secondary-nav">
@@ -109,21 +110,9 @@ const Header = (props) => {
                     <a href="#kontakt">KONTAKT</a>
                 </nav>
             </div>
-            {/* :
-                <div id="navbar-fixed-mobile">
-                    <div className="hamburger-menu" onClick={toggle}>
-                        <i class="fas fa-bars"></i>
-                    </div>
-
-                    <Collapse isOpen={isOpen}>
-                        <div className="menu-item"> <a href="#portfolio">PORTFOLIO</a></div>
-                        <div className="menu-item"> <a href="#o-mnie">O MNIE</a></div>
-                        <div className="menu-item"> <a href="#oferta">OFERTA</a></div>
-                        <div className="menu-item"> <a href="#kontakt">KONTAKT</a></div>
-                    </Collapse>
-
-                </div>
-            } */}
+            :
+            <MobileHeader/>
+            }
         </div>
     );
 
