@@ -3,6 +3,7 @@ import { HashRouter, Route, Link, Switch } from 'react-router-dom';
 import About from './containers/About';
 import Contact from './containers/Contact';
 import Header from './components/Header';
+import NarrowHeader from './components/NarrowHeader';
 import Instafeed from './components/Instafeed';
 import Footer from './components/Footer';
 import PhotoGallery from './containers/PhotoGallery';
@@ -12,19 +13,23 @@ function App() {
   return (
     <div className="App">
       <HashRouter basename='/'>
-        <Header />
         <Switch>
           <Route exact path="/">
-            <About />
-            <hr/>
-            <Contact />
+            <Header />
           </Route>
-          {/* <Instafeed /> */}
-          <Route path="/o-mnie" component={About} />
-          <Route path="/kontakt" component={Contact} />
-          <Route path="/portfolio/:id" component={PhotoGallery} />
+          <Route path="/o-mnie">
+            <NarrowHeader />
+            <About />
+            <Footer />
+          </Route>
+          <Route path="/kontakt">
+            <NarrowHeader />
+            <Contact />
+            <Footer />
+          </Route>
+          <Route path="/portfolio/:id" component={PhotoGallery} >
+          </Route>
         </Switch>
-        <Footer />
       </HashRouter>
     </div>
   );

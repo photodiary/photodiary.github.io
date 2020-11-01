@@ -4,6 +4,8 @@ footer {
     padding: 2vh 6vw;
     text-align: right;
     font-size: 0.7rem;
+    position: relative;
+    bottom: 0;
 }
 footer a {
      color: white;

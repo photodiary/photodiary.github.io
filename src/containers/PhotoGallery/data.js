@@ -1,4 +1,27 @@
 var data1 = [
+    { fullSize: "s25p01.jpg", thumbnail: "s25p01-t.jpg" },
+    { fullSize: "s25p02.jpg", thumbnail: "s25p02-t.jpg" },
+    { fullSize: "s25p03.jpg", thumbnail: "s25p03-t.jpg" },
+
+    { fullSize: "s24p01.jpg", thumbnail: "s24p01-t.jpg" },
+    { fullSize: "s24p02.jpg", thumbnail: "s24p02-t.jpg" },
+    { fullSize: "s24p03.jpg", thumbnail: "s24p03-t.jpg" },
+    { fullSize: "s24p04.jpg", thumbnail: "s24p04-t.jpg" },
+    { fullSize: "s24p05.jpg", thumbnail: "s24p05-t.jpg" },
+    { fullSize: "s24p06.jpg", thumbnail: "s24p06-t.jpg" },
+
+    { fullSize: "s23p01.jpg", thumbnail: "s23p01-t.jpg" },
+    { fullSize: "s23p02.jpg", thumbnail: "s23p02-t.jpg" },
+    { fullSize: "s23p03.jpg", thumbnail: "s23p03-t.jpg" },
+    { fullSize: "s23p04.jpg", thumbnail: "s23p04-t.jpg" },
+
+    { fullSize: "s22p01.jpg", thumbnail: "s22p01-t.jpg" },
+    { fullSize: "s22p02.jpg", thumbnail: "s22p02-t.jpg" },
+    { fullSize: "s22p03.jpg", thumbnail: "s22p03-t.jpg" },
+    { fullSize: "s22p04.jpg", thumbnail: "s22p04-t.jpg" },
+    { fullSize: "s22p05.jpg", thumbnail: "s22p05-t.jpg" },
+    { fullSize: "s22p06.jpg", thumbnail: "s22p06-t.jpg" },
+
     { fullSize: "s20p01.jpg", thumbnail: "s20p01-t.jpg" },
     { fullSize: "s20p02.jpg", thumbnail: "s20p02-t.jpg" },
     { fullSize: "s20p03.jpg", thumbnail: "s20p03-t.jpg" },

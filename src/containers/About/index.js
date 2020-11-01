@@ -6,7 +6,7 @@ import './style.css';
 
 const About = (props) => {
     return (
-        <div id="o-mnie" className="content" style={{ paddingTop: "10px" }}>
+        <div id="o-mnie" className="content" style={{ paddingTop: "10px", marginTop: "80px" }}>
             <br />
             <Row>
                 <Col xs="12">

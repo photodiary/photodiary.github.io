@@ -1,6 +1,7 @@
 import React from 'react';
-import { data } from './data'
+import { data } from './data';
 import ResponsiveGallery from 'react-responsive-gallery';
+import NarrowHeader from '../../components/NarrowHeader';
 import './style.css';
 
 export default class PhotoGallery extends React.Component {
@@ -15,15 +16,18 @@ export default class PhotoGallery extends React.Component {
     var photos = data[categoryId - 1]
 
     return (
-      <div style={{ padding: "5vh 5vw" }}>
+      <div>
+        <NarrowHeader/>
+      <div style={{ padding: "5vh 5vw", marginTop: "80px"}}>
         <h3>{categoryName}</h3>
         <ResponsiveGallery
           images={photos}
-          useLightBox="true"
+          useLightBox={window.innerWidth > 600 ? true : false}
           lightBoxAdditionalProps={{ enableZoom: false, clickOutsideToClose: true, discourageDownloads: true }}
           numOfImagesPerRow={{ xs: 1, s: 2, m: 3, l: 3, xl: 4, xxl: 4 }}
           imagesPaddingBottom={{ xs: 8, s: 8, m: 8, l: 8, xl: 8, xxl: 8 }}
         />
+      </div>
       </div>
     );
   }

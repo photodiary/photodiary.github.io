@@ -24,7 +24,7 @@ export default class Contact extends React.Component {
   render() {
     const { status } = this.state;
     return (
-      <div id="kontakt" className="content" style={{ padding: "10px" }}>
+      <div id="kontakt" className="content" style={{ padding: "10px", marginTop: "90px", marginBottom: "10px" }}>
         <br />
         <Row>
           <Col>
